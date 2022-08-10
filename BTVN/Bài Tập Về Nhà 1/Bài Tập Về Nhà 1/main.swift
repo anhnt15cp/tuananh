@@ -89,8 +89,8 @@ class lopHoc {
         }
     }
     func xaThaiSinhVien(name : String){
-        sinhvien1.removeAll { element in
-            return element.ten == name
+        sinhvien1.removeAll { students in
+            return students.ten == name
         }
     }
     func moreSinhVien (newSinhVien : sinhVien ){
