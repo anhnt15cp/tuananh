@@ -74,18 +74,32 @@ class classRoom {
             return student.name == clearStuden
         }
     }
-    func updateNameStudent( newName : Students){
+    func moreStudent( newName : Students){
         self.student.append(newName)
     }
     func findStuden ( name : String)-> Students?{
         if let studen = student.first(where: {$0.name == name}){
-        return studen
+            return studen
         }else {
-        print("không tìm thấy sv")}
+           print("không tìm thấy sv")}
         return nil
-        
+    }
+    
+    func updateSinhvien(name:String,newName:String?)->Students?{
+        if let student = self.student.first(where: {$0.name == name}){
+            if let name = newName{
+                student.name = name
+            }
+           
+            return student
+        }else{
+           print("Không tìm thấy tên SV")
+            return nil
+        }
     }
 }
+
+
 
 
 var newClassRoom = classRoom.init(nameClass: "Techmaster", nameGVCN: "Quỳnh Teacher", student1:  [Students(name: "Nam", age:"18", phone: "0900"),
@@ -108,11 +122,18 @@ print("Tên Cô Giáo Mới là : \(newClassRoom.nameGVCN)")
 
 newClassRoom.clearStuden(clearStuden: "Nam")
 let amountStuden = newClassRoom.student.count
- print("Số học sinh trong lớp là : \(amountStuden)")
+print("Số học sinh trong lớp là : \(amountStuden)")
 
-newClassRoom.updateNameStudent(newName: Students(name: "Luyện", age: "20", phone: "090004"))
+newClassRoom.moreStudent(newName: Students(name: "Luyện", age: "20", phone: "090004"))
 let amountStuden1 = newClassRoom.student.count
 print("Số Học sinh trong lớp là : \(amountStuden1)")
 
 let findStuden = newClassRoom.findStuden(name: "Hoàng")
-print(findStuden?.phone,findStuden?.age)
+print(findStuden?.name , findStuden?.age , findStuden?.phone)
+
+
+let updateStudent = newClassRoom.updateSinhvien(name: "Bắc", newName: "Đông")
+print("Đổi tên học sinh Bắc thành : ",updateStudent?.name)
+
+
+
