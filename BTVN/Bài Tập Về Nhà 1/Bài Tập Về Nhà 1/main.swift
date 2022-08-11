@@ -42,20 +42,20 @@ class sinhVien {
     var ten : String = ""
     var tuoi : String = ""
     var sdt : String = ""
-    
+
     init ( ten : String , tuoi : String , sdt : String){
         self.ten = ten
         self.tuoi = tuoi
         self.sdt = sdt
     }
-    
+
 }
 
 class lopHoc {
     var tenLop : String = ""
     var tenGVCN : String
     var sinhvien1 : [sinhVien]
-    
+
     init(tenLop : String , tenGVCN : String , sinhvien2 : [sinhVien]){
         self.tenLop = tenLop
         self.tenGVCN = tenGVCN
@@ -70,7 +70,7 @@ class lopHoc {
             return nil
         }
     }
-    
+
     func updateSinhvien(name:String,newName:String?, newAge:String?, newPhone:String?)->sinhVien?{
         if let sv = self.sinhvien1.first(where: {$0.ten == name}){
             if let name = newName{
@@ -99,7 +99,7 @@ class lopHoc {
     func newNameGV (newNameGV : String){
         self.tenGVCN = newNameGV
     }
-    
+
     }
 
 var newLopHoc = lopHoc.init(tenLop: "TechMaster", tenGVCN: "Quỳnh Teacher", sinhvien2: [sinhVien(ten: "Nam", tuoi: "18", sdt: "0900"),
@@ -139,3 +139,4 @@ print("Số sinh viên trong lớp học \(newLopHoc.tenLop) : \(newLopHoc.sinhv
 
 newTeacher.newNameGV(newNameGV: "Trang Teacher")
 print(newTeacher.tenGVCN)
+
