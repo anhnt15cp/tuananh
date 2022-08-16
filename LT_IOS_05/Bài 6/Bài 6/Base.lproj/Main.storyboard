@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-652" y="106"/>
+            <point key="canvasLocation" x="-772" y="106"/>
         </scene>
         <!--Traffic Lighs View Controller-->
         <scene sceneID="690-ie-7XF">
