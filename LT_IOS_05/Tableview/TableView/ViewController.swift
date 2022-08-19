@@ -12,6 +12,7 @@ class ViewController: UIViewController , UITableViewDataSource {
     
     @IBOutlet weak var MyTableview: UITableView!
     
+    @IBOutlet weak var imageView: UIImageView!
     var array : [String]!
     var array1: [String]!
     override func viewDidLoad() {
@@ -22,8 +23,21 @@ class ViewController: UIViewController , UITableViewDataSource {
         
         MyTableview.dataSource = self
         myTableview2.dataSource = self
+     
         
     }
+    @IBAction func ClickedImage(_ sender: UIButton) {
+        let UrlString = "https://9mobi.vn/cf/images/2015/03/nkk/hinh-dep-1.jpg"
+        
+        let url = URL(string: UrlString)
+        
+        let data = try! Data(contentsOf: url!)
+        
+        imageView.image = UIImage(data: data)
+    }
+    
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         1
     }

@@ -190,7 +190,7 @@ login(success: { response in
 //@IBOutlet weak var rubyImageView: UIImageView!
 //
 //    @IBOutlet weak var amRichLabel: UILabel!
-
+//
 /// Trạng thái alpha ban đầu là không nhìn thấy
 //        rubyImageView.alpha = 0.0
 //      amRichLabel.alpha = 0.0
@@ -201,9 +201,9 @@ login(success: { response in
 //       UIView.animate(withDuration: 5) {
 //       /// Hiện alpha dần dần
 //           self.rubyImageView.alpha = 1.0
-//           elf.amRichLabel.alpha = 1.0
+//           self.amRichLabel.alpha = 1.0
 //
 //           /// Di chuyển vị trí của label đi lên
 //           self.amRichLabel.center.y = self.view.center.y + 200
 
-//
+
