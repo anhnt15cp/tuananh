@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController , UITableViewDataSource {
+class ViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var myTableview2: UITableView!
     
     @IBOutlet weak var MyTableview: UITableView!
@@ -23,6 +23,7 @@ class ViewController: UIViewController , UITableViewDataSource {
         
         MyTableview.dataSource = self
         myTableview2.dataSource = self
+       
      
         
     }
@@ -67,7 +68,7 @@ class ViewController: UIViewController , UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Section" + String(section)
     }
-    
+   
 }
 
 

@@ -10,8 +10,15 @@ struct MenuItem {
     var name: String = ""
     var conutry: String = ""
     var image: String = ""
+     
+//    init(name: String , conutry: String , image: String){
+//        self.name = name
+//        self.conutry = conutry
+//        self.image = image
     
-}
+    }
+    
+
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
     
     
@@ -19,8 +26,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
                   MenuItem(name: " Cá Hồi", conutry: "Mỹ ", image: "2.jpg"),
                   MenuItem(name: "Sườn Nướng", conutry: "Việt Nam ", image: "3.jpg"),
                   MenuItem(name: "Mẹt ", conutry: "Việt Nam ", image: "4.jpg"),
-                  MenuItem(name: "Bánh Kẹp", conutry: "Việt Nam ", image: "5.jpg"),
-    ]
+                  MenuItem(name: "Bánh Kẹp", conutry: "Việt Nam ", image: "5.jpg"),]
     
                   
     var selectecd: MenuItem?
@@ -65,9 +71,6 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         self.performSegue(withIdentifier: "mySTRB", sender: nil)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        50
-    }
-    
+ 
 }
 

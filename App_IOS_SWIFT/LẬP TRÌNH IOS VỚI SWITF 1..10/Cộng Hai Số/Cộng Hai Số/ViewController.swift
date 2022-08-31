@@ -26,7 +26,8 @@ class ViewController: UIViewController {
             
             
     }
-        let result = Int(number1)! + Int(number2)!
+     let result = Int(number1)! + Int(number2)!
+    
         
         resultLabel.text = "Kết Quả \(result)"
         

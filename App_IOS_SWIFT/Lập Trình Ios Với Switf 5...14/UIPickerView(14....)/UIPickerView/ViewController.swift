@@ -26,7 +26,7 @@ class ViewController: UIViewController , UIPickerViewDataSource , UIPickerViewDe
     }
     // Bước 3 : Đặt ' Số Lượng Thành Phần ' ( Func )
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
+        return 4
     }
     // Bước 4 : Đặt ' Số Dòng PeckerView có thể hiển thị lên trên màn hình ' (Func)
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {

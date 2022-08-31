@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         imageview.frame.origin.y = y - 10
         
-        let yy = imageview.frame.size.width
+        let yy = imageview.frame.size.width 
         imageview.frame.size.width = yy - 10
         
     }

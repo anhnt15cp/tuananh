@@ -16,17 +16,9 @@ class ViewController: UIViewController {
        
     }
     @IBAction func localImageRemote(_ sender: UIButton) {
-        // tạo URString
-        let UrlString = "https://1.bp.blogspot.com/-n_bFzL9lPUU/Xp23H9Sk8yI/AAAAAAAAhyA/JYfvZhwguxc8vT_YS3w14Xi3YWf3hxqIQCLcBGAsYHQ/s1600/Hinh-Anh-Dep-Tren-Mang%2B%25282%2529.jpg"
-        // liên kết URL  = URL ( URL String)
-       let Url = URL(string: UrlString)
-        
-        //tạo Data
-        let data = try! Data(contentsOf: Url!)
-        
-        // liên kết data vào trong imageview
+       let url = URL(string: "https://images4.content-hci.com/commimg/myhotcourses/blog/post/myhc_94121.jpg")
+    let data = try! Data(contentsOf: url!)
         imageview.image = UIImage(data: data)
-    
     }
     
 
