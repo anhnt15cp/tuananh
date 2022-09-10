@@ -16,31 +16,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3PG-Aq-1mn">
-                                <rect key="frame" x="65" y="277" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTh-bs-RjU">
+                                <rect key="frame" x="182" y="733" width="50" height="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="rotate.3d" catalog="system"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-SI-6Rm">
+                                <rect key="frame" x="103.5" y="229" width="207" height="448"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-Ia-RbN">
+                                        <rect key="frame" x="54" y="29" width="100" height="360"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ea-kd-v3P">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="36Y-Ci-vpA"/>
+                                                    <constraint firstAttribute="width" constant="100" id="GaR-wK-Fu9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vbz-g8-FrW">
+                                                <rect key="frame" x="0.0" y="90" width="100" height="90"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZAQ-2t-MHO">
+                                                <rect key="frame" x="0.0" y="180" width="100" height="90"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CL4-CY-bic">
+                                                <rect key="frame" x="0.0" y="270" width="100" height="90"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="360" id="MRX-hJ-26G"/>
+                                            <constraint firstAttribute="width" constant="100" id="jI6-UR-GCb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="448" id="IT5-Er-ne8"/>
+                                    <constraint firstAttribute="bottom" secondItem="hqF-Ia-RbN" secondAttribute="bottom" constant="59" id="JQH-7B-alT"/>
+                                    <constraint firstItem="hqF-Ia-RbN" firstAttribute="top" secondItem="T8W-SI-6Rm" secondAttribute="top" constant="29" id="dPy-gk-Sn4"/>
+                                    <constraint firstItem="hqF-Ia-RbN" firstAttribute="leading" secondItem="T8W-SI-6Rm" secondAttribute="leading" constant="54" id="iYj-Ks-VZy"/>
+                                    <constraint firstAttribute="width" constant="207" id="mPa-Hi-SZo"/>
+                                    <constraint firstAttribute="trailing" secondItem="hqF-Ia-RbN" secondAttribute="trailing" constant="53" id="nri-eF-TKE"/>
+                                </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bQe-OH-KSn" appends="YES" id="6D4-WS-jO9"/>
+                                    <outletCollection property="gestureRecognizers" destination="C4h-pW-aYv" appends="YES" id="J4J-aO-fLL"/>
                                 </connections>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T8W-SI-6Rm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="3gH-jX-CfC"/>
+                            <constraint firstItem="T8W-SI-6Rm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ZJu-hv-5Sb"/>
+                            <constraint firstItem="yTh-bs-RjU" firstAttribute="top" secondItem="T8W-SI-6Rm" secondAttribute="bottom" constant="56" id="g5f-Xc-9De"/>
+                            <constraint firstItem="yTh-bs-RjU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="iTU-Ir-Z9I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yTh-bs-RjU" secondAttribute="trailing" constant="182" id="lR0-Si-MVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yTh-bs-RjU" secondAttribute="bottom" constant="107" id="oyr-AH-elK"/>
+                            <constraint firstItem="T8W-SI-6Rm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="rDB-SS-0vr"/>
+                            <constraint firstItem="T8W-SI-6Rm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zOY-vx-c6w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="image1" destination="1Ea-kd-v3P" id="Omz-Xj-IRF"/>
+                        <outlet property="image2" destination="Vbz-g8-FrW" id="8Y3-Ey-Ojl"/>
+                        <outlet property="image3" destination="ZAQ-2t-MHO" id="bpb-xb-9MN"/>
+                        <outlet property="image4" destination="CL4-CY-bic" id="vwg-1U-XIe"/>
+                        <outlet property="myView" destination="T8W-SI-6Rm" id="tqJ-Wi-DNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <rotationGestureRecognizer id="bQe-OH-KSn">
+                <rotationGestureRecognizer id="C4h-pW-aYv">
                     <connections>
-                        <action selector="handleRotation:" destination="BYZ-38-t0r" id="Swm-wu-msj"/>
+                        <action selector="rotationView:" destination="BYZ-38-t0r" id="E1L-lU-1Tg"/>
+                        <outlet property="delegate" destination="T8W-SI-6Rm" id="6tc-qo-SC2"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="520" y="232"/>
+            <point key="canvasLocation" x="288" y="221"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1.jpg" width="190" height="119"/>
+        <image name="rotate.3d" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
