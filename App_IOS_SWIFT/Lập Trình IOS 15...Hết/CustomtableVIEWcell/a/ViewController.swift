@@ -35,12 +35,12 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         // Do any additional setup after loading the view.
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let controller = segue.destination as? AViewController {
-            controller.item = selectecd
-            
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let controller = segue.destination as? AViewController {
+//            controller.item = selectecd
+//
+//        }
+//    }
     func numberOfSections(in tableView: UITableView) -> Int {
         2
     }

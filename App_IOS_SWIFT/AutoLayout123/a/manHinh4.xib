@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="manHinh4" customModule="a" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fVl-wD-Wis">
+                    <rect key="frame" x="0.0" y="179" width="414" height="717"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Đi đến facebook.com và nhấp vào Tạo tài khoản mới.
+Nhập tên, email hoặc số điện thoại di động, mật khẩu, ngày sinh và giới tính của bạn.
+Nhấp vào Đăng ký.
+Để hoàn tất quá trình tạo tài khoản, bạn cần xác nhận email hoặc số điện thoại di động của mình.
+Nếu bạn gặp sự cố khi tạo tài khoản Facebook:
+Để thông báo cho chúng tôi về vấn đề bạn gặp phải khi tạo tài khoản Facebook, bạn có thể điền vào mẫu này.
+
+Nếu bạn gặp sự cố khi đăng nhập:
+Nếu gặp sự cố về mật khẩu, hãy tìm hiểu cách đặt lại mật khẩu.
+Nếu vẫn không đăng nhập được, hãy tìm hiểu điều cần làm tiếp theo.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-jf-R3C">
+                    <rect key="frame" x="20" y="59" width="79" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="GWX-fK-5se"/>
+                        <constraint firstAttribute="width" constant="79" id="RjF-Hf-kW2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="backward.fill" catalog="system"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="xUA-M6-dRy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fVl-wD-Wis" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.8" id="9Em-1v-CYv"/>
+                <constraint firstAttribute="bottom" secondItem="fVl-wD-Wis" secondAttribute="bottom" id="GOo-3a-Mfp"/>
+                <constraint firstAttribute="trailing" secondItem="fVl-wD-Wis" secondAttribute="trailing" id="Go7-YP-oJw"/>
+                <constraint firstItem="uTc-jf-R3C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="R0I-OG-Krj"/>
+                <constraint firstItem="fVl-wD-Wis" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cuS-Lr-NV2"/>
+                <constraint firstItem="fVl-wD-Wis" firstAttribute="top" secondItem="uTc-jf-R3C" secondAttribute="bottom" constant="70" id="vYu-di-I9R"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uTc-jf-R3C" secondAttribute="trailing" constant="315" id="zMG-Lb-GfE"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

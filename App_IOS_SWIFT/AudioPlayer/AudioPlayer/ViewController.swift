@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        setupAudio()
     }
-    func secondsToHoursMinutesSeconds (seconds : Double) -> (String) {
+    func secondsToHoursMinutesSeconds (seconds : Double) -> (String) {// chuyển số thập phân sang số thực
         let (hr,  minf) = modf (seconds / 3600)
         let (min, secf) = modf (60 * minf)
         return ("\(Int(hr)):\(Int(min)):\(Int(60 * secf))")

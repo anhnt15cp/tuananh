@@ -19,9 +19,10 @@ class ViewController: UIViewController {
     @IBAction func ValueChanged(_ sender: UISlider) {
         let index = Int(sender.value)
         
-        let image = UIImage(named: "\(index).jpg")
+//        let image = UIImage(named: "\(index).jpg")
+       
         
-        Imageview.image = image
+        Imageview.image = UIImage(named: "\(index).jpg")
     }
     
 }

@@ -49,7 +49,9 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         return cell!
     }
     
-   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("ABC")
+    }
 
 
 }

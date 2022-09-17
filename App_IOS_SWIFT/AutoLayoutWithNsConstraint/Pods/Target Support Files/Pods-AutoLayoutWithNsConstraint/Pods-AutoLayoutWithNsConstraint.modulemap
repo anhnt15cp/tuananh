@@ -1,0 +1,6 @@
+framework module Pods_AutoLayoutWithNsConstraint {
+  umbrella header "Pods-AutoLayoutWithNsConstraint-umbrella.h"
+
+  export *
+  module * { export * }
+}
