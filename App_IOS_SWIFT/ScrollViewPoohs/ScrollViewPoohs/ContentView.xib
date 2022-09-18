@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContentView" customModule="ScrollViewPoohs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cli-7E-7A2">
+                    <rect key="frame" x="15" y="84" width="384" height="384"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cli-7E-7A2" secondAttribute="height" id="y9L-5J-UI9"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iok-Ci-YaM">
+                    <rect key="frame" x="87" y="498" width="240" height="187"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iok-Ci-YaM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="87" id="Acs-ns-KU2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cli-7E-7A2" secondAttribute="trailing" constant="15" id="AqL-fv-uBy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iok-Ci-YaM" secondAttribute="trailing" constant="87" id="L28-8e-LBB"/>
+                <constraint firstItem="iok-Ci-YaM" firstAttribute="top" secondItem="cli-7E-7A2" secondAttribute="bottom" constant="30" id="LH6-th-UwW"/>
+                <constraint firstItem="cli-7E-7A2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="40" id="ZGF-ar-fRI"/>
+                <constraint firstItem="cli-7E-7A2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="blj-Zx-8hm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iok-Ci-YaM" secondAttribute="bottom" constant="177" id="c9D-UO-QGZ"/>
+            </constraints>
+            <connections>
+                <outlet property="imagePooh" destination="cli-7E-7A2" id="TRw-lD-a7V"/>
+                <outlet property="myTextField" destination="iok-Ci-YaM" id="rJf-UM-ZKc"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
