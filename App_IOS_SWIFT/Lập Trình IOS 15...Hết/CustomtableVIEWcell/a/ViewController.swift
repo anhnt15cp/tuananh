@@ -35,12 +35,12 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         // Do any additional setup after loading the view.
         
     }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let controller = segue.destination as? AViewController {
-//            controller.item = selectecd
-//
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? AViewController {
+            controller.item = selectecd
+
+        }
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         2
     }
@@ -54,11 +54,12 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")
-        
+
         let item = array[indexPath.item]
         cell?.textLabel?.text = item.name
         cell?.imageView?.image = UIImage(named: item.image)
         cell?.detailTextLabel?.text = item.conutry
+    
         
         return cell!
         

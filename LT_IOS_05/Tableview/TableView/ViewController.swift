@@ -18,7 +18,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        array = ["Android" , "IOS" , "PHP" , "Apple"]
+        array = ["Android" , "IOS" , "PHP" , "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple", "Apple",]
         array1 = ["Bánh","Mì" , "Đây" , "Nè","Abc"]
         
         MyTableview.dataSource = self

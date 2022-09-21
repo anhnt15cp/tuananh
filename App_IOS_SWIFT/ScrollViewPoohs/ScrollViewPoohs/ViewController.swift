@@ -25,12 +25,12 @@ class ViewController: UIViewController {
                                     width: view.bounds.width,
                                     height: view.bounds.height)
         myScrollView.isPagingEnabled = true
-        myScrollView.showsHorizontalScrollIndicator = false
-//        myScrollView.backgroundColor = .yellow
-//        myScrollView.delegate = self
+        myScrollView.showsHorizontalScrollIndicator = true
+        myScrollView.backgroundColor = .red
+        myScrollView.delegate = self
         
         myPageControl.currentPage = 0
-        myPageControl.contentMode = .scaleAspectFill
+        myPageControl.contentMode = .center
         myPageControl.numberOfPages = poohsData.count
         myPageControl.pageIndicatorTintColor = .blue
         myPageControl.frame = CGRect(x: 0,
@@ -39,14 +39,14 @@ class ViewController: UIViewController {
                                      height: 100)
         myPageControl.center = CGPoint(x: view.center.x,
                                        y: view.bounds.maxY-100)
-//        setupImagePoohs(pooh: poohsData)
+        setupImagePoohs(pooh: poohsData)
         view.addSubview(myScrollView)
         view.bringSubviewToFront(myPageControl)
         
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        setupImagePoohs(pooh: poohsData)
+//        setupImagePoohs(pooh: poohsData)
     }
     
     func setupImagePoohs(pooh: [poohs]) {
@@ -55,11 +55,11 @@ class ViewController: UIViewController {
             contentScroll.imagePooh.image = UIImage(named: item.imagePooh)
             contentScroll.myTextField.text = item.description
             
-            contentScroll.frame = CGRect(x: myScrollView.bounds.width * CGFloat(index) , y: 0, width: myScrollView.bounds.size.width, height: myScrollView.bounds.size.height)
+            contentScroll.frame = CGRect(x: 0, y:  myScrollView.bounds.width * CGFloat((index)), width: myScrollView.bounds.size.width , height: myScrollView.bounds.size.height)
             
             myScrollView.addSubview(contentScroll)
         }
-        myScrollView.contentSize = CGSize(width: myScrollView.bounds.width * CGFloat((pooh.count)), height: myScrollView.bounds.height)
+        myScrollView.contentSize = CGSize(width: myScrollView.bounds.width, height: myScrollView.bounds.height * CGFloat((pooh.count)))
 
     }
 
