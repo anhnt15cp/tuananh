@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="StS-BE-1JI">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="935"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2057.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông Tin Khách Hàng" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-VN-3fB">
                                                 <rect key="frame" x="40" y="8" width="316" height="44"/>
@@ -107,7 +107,8 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-D0-Qra">
-                                                <rect key="frame" x="60" y="801" width="294" height="34"/>
+                                                <rect key="frame" x="60" y="1923.5" width="294" height="34"/>
+                                                <color key="backgroundColor" red="0.93333339689999995" green="0.39473236789999999" blue="0.26526846529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Đăng Ký">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -116,38 +117,33 @@
                                                     <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLA-vG-hhx"/>
                                                 </connections>
                                             </button>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fwC-FP-Lgi">
-                                                <rect key="frame" x="60" y="681" width="295" height="90"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="90" id="2kD-Oz-M2E"/>
-                                                    <constraint firstAttribute="width" constant="295" id="Htf-Ff-jBm"/>
-                                                </constraints>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipq-9X-xNm">
+                                                <rect key="frame" x="60" y="693" width="294" height="1180.5"/>
                                                 <mutableString key="text">Tài khoản khách hàng được tạo ra trên App Med247, sau lần đầu tiên đăng nhập vào tài khoản, khách hàng tự chịu trách nhiệm về năng lực hành vi trong việc thay đổi thông tin cá nhân và sử dụng Med247. Việc thu thập dữ liệu chủ yếu trên App Med247 bao gồm: email, điện thoại, tên đăng nhập, mật khẩu đăng nhập, địa chỉ khách hàng. Đây là các thông tin mà App Med247 cần khách hàng bắt buộc khi đăng ký sử dụng dịch vụ y tế và để App Med247 liên hệ xác nhận khi khách hàng đăng ký sử dụng dịch vụ trên app nhằm đảm bảo quyền lợi cho cho khách hàng.
 
 Trong quá trình sử dụng dịch vụ y tế trên App Med247, chúng tôi lưu giữ thông tin chi tiết về lịch sử đặt lịch hẹn, bệnh án điện tử, đơn thuốc (nếu có), tiểu sử bệnh lý.
 
 Các khách hàng sẽ tự chịu trách nhiệm về bảo mật và lưu giữ mọi hoạt động sử dụng dịch vụ y tế dưới tên đăng ký, mật khẩu của mình. Ngoài ra, khách hàng có trách nhiệm thông báo kịp thời về App Med247 về những hành vi sử dụng trái phép, lạm dụng, vi phạm bảo mật, lưu giữ tên đăng ký và mật khẩu của bên thứ ba để có biện pháp giải quyết phù hợp.</mutableString>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstItem="fwC-FP-Lgi" firstAttribute="leading" secondItem="StS-BE-1JI" secondAttribute="leading" constant="60" id="Acm-72-qxq"/>
-                                            <constraint firstItem="fwC-FP-Lgi" firstAttribute="top" secondItem="Qhd-2y-viY" secondAttribute="bottom" constant="18" id="KOM-DL-T5o"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ipq-9X-xNm" secondAttribute="trailing" constant="60" id="5So-n6-JfI"/>
                                             <constraint firstItem="Qhd-2y-viY" firstAttribute="leading" secondItem="StS-BE-1JI" secondAttribute="leading" constant="59" id="Lya-hd-Z3G"/>
-                                            <constraint firstItem="tYg-D0-Qra" firstAttribute="top" secondItem="fwC-FP-Lgi" secondAttribute="bottom" constant="30" id="Lyy-Nz-dJI"/>
+                                            <constraint firstItem="tYg-D0-Qra" firstAttribute="top" secondItem="Ipq-9X-xNm" secondAttribute="bottom" constant="50" id="M0t-JK-9kO"/>
                                             <constraint firstItem="tYg-D0-Qra" firstAttribute="leading" secondItem="StS-BE-1JI" secondAttribute="leading" constant="60" id="TuI-lu-ruD"/>
                                             <constraint firstItem="hhD-VN-3fB" firstAttribute="top" secondItem="StS-BE-1JI" secondAttribute="top" constant="8" id="aJ7-Hc-Qie"/>
+                                            <constraint firstItem="Ipq-9X-xNm" firstAttribute="top" secondItem="Qhd-2y-viY" secondAttribute="bottom" constant="30" id="du0-oL-VcZ"/>
                                             <constraint firstItem="Qhd-2y-viY" firstAttribute="top" secondItem="hhD-VN-3fB" secondAttribute="bottom" constant="16" id="hwf-YT-7Ux"/>
                                             <constraint firstAttribute="trailing" secondItem="Qhd-2y-viY" secondAttribute="trailing" constant="60" id="jV0-T0-OjL"/>
                                             <constraint firstItem="hhD-VN-3fB" firstAttribute="leading" secondItem="StS-BE-1JI" secondAttribute="leading" constant="40" id="jlI-Wb-bVt"/>
                                             <constraint firstAttribute="trailing" secondItem="hhD-VN-3fB" secondAttribute="trailing" constant="58" id="ozg-nl-QYL"/>
                                             <constraint firstAttribute="trailing" secondItem="tYg-D0-Qra" secondAttribute="trailing" constant="60" id="p2a-AL-fRE"/>
+                                            <constraint firstItem="Ipq-9X-xNm" firstAttribute="leading" secondItem="StS-BE-1JI" secondAttribute="leading" constant="60" id="vr6-23-hJj"/>
                                             <constraint firstAttribute="bottom" secondItem="tYg-D0-Qra" secondAttribute="bottom" constant="100" id="wjU-Ve-UFX"/>
-                                            <constraint firstAttribute="trailing" secondItem="fwC-FP-Lgi" secondAttribute="trailing" constant="59" id="yih-V9-0wj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -184,14 +180,8 @@ Các khách hàng sẽ tự chịu trách nhiệm về bảo mật và lưu gi�
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

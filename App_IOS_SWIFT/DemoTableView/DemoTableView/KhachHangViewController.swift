@@ -89,8 +89,10 @@ class KhachHangViewController: UIViewController, UITableViewDataSource , UITable
         
         return swipe
     }
-    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return  "Bạn Đã Đăng Ký Thành Công"
+//    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+//        return  "Bạn Đã Đăng Ký Thành Công"
+//    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return " Bạn Đã Dăng Ký Thành Công"
     }
-    
 }
