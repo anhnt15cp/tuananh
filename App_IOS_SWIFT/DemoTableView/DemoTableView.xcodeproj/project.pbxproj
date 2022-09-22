@@ -19,6 +19,8 @@
 		CC4FD36F28D9EB430082806F /* KhachHangTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4FD36D28D9EB430082806F /* KhachHangTableViewCell.xib */; };
 		CC4FD37128D9F3430082806F /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FD37028D9F3430082806F /* CustomerModel.swift */; };
 		CC4FD37728DA148F0082806F /* 1234.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CC4FD37628DA148F0082806F /* 1234.mp3 */; };
+		CCA915B028DC2824002B1696 /* ABCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA915AE28DC2824002B1696 /* ABCTableViewCell.swift */; };
+		CCA915B128DC2824002B1696 /* ABCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA915AF28DC2824002B1696 /* ABCTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		CC4FD36D28D9EB430082806F /* KhachHangTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KhachHangTableViewCell.xib; sourceTree = "<group>"; };
 		CC4FD37028D9F3430082806F /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		CC4FD37628DA148F0082806F /* 1234.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1234.mp3; sourceTree = "<group>"; };
+		CCA915AE28DC2824002B1696 /* ABCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCTableViewCell.swift; sourceTree = "<group>"; };
+		CCA915AF28DC2824002B1696 /* ABCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABCTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				CC4FD36728D9E8AE0082806F /* KhachHangViewController.xib */,
 				CC4FD36C28D9EB430082806F /* KhachHangTableViewCell.swift */,
 				CC4FD36D28D9EB430082806F /* KhachHangTableViewCell.xib */,
+				CCA915AE28DC2824002B1696 /* ABCTableViewCell.swift */,
+				CCA915AF28DC2824002B1696 /* ABCTableViewCell.xib */,
 				CC4FD35828D9DEA80082806F /* Main.storyboard */,
 				CC4FD35B28D9DEAA0082806F /* Assets.xcassets */,
 				CC4FD35D28D9DEAB0082806F /* LaunchScreen.storyboard */,
@@ -149,6 +155,7 @@
 				CC4FD35F28D9DEAB0082806F /* LaunchScreen.storyboard in Resources */,
 				CC4FD35C28D9DEAA0082806F /* Assets.xcassets in Resources */,
 				CC4FD35A28D9DEA80082806F /* Main.storyboard in Resources */,
+				CCA915B128DC2824002B1696 /* ABCTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +171,7 @@
 				CC4FD36828D9E8AF0082806F /* KhachHangViewController.swift in Sources */,
 				CC4FD35728D9DEA80082806F /* ViewController.swift in Sources */,
 				CC4FD35328D9DEA80082806F /* AppDelegate.swift in Sources */,
+				CCA915B028DC2824002B1696 /* ABCTableViewCell.swift in Sources */,
 				CC4FD35528D9DEA80082806F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

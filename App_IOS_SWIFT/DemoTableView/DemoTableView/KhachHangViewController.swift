@@ -13,6 +13,7 @@ class KhachHangViewController: UIViewController, UITableViewDataSource , UITable
     @IBOutlet weak var myTableView: UITableView!
    
     
+    let customerModel: [CustomerModel] = []
     
     var khachHang: String = ""
     var tinhThanhPho: String = ""
@@ -26,6 +27,9 @@ class KhachHangViewController: UIViewController, UITableViewDataSource , UITable
     var handleback : (()-> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nib1 = UINib.init(nibName: "ABCTableViewCell", bundle: nil)
+        myTableView.register(nib1, forCellReuseIdentifier: "mycell1")
+        
         let nib = UINib.init(nibName: "KhachHangTableViewCell", bundle: nil)
         myTableView.register(nib, forCellReuseIdentifier: "mycell")
         myTableView.dataSource = self
@@ -57,12 +61,17 @@ class KhachHangViewController: UIViewController, UITableViewDataSource , UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mycell", for: indexPath) as? KhachHangTableViewCell
 //        let item = CustomerModel(hoVaTen: "\(khachHang)", tinhThanhPho: "\(tinhThanhPho)", soDienThoai: "\(soDienThoai)", gioiTinh: "\(gioiTinh)", loaiKhachHang: "\(loaiKhachHang)", tuoiKhachHang: "\(tuoiKhachHang)")
+//        let item = customerModel[indexPath.row]
+        
+        
         cell?.nameLabel.text = "Họ Và Tên : \(khachHang)"
         cell?.cityLabel.text = "Tỉnh Và Thành Phố : \(tinhThanhPho)"
         cell?.phoneNumberLabel.text = "Số Điện Thoại : \(soDienThoai)"
         cell?.genDer.text = "Giới Tính : \(gioiTinh)"
         cell?.typeLabel.text = "Loại Khách Hàng : \(loaiKhachHang)"
         cell?.ageLabel.text = "Tuổi Khách Hàng : \(khachHang)"
+      
+        
         
         return cell!
     }
@@ -95,4 +104,6 @@ class KhachHangViewController: UIViewController, UITableViewDataSource , UITable
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return " Bạn Đã Dăng Ký Thành Công"
     }
+    
+    
 }

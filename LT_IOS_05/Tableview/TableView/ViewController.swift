@@ -23,8 +23,8 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
         
         MyTableview.dataSource = self
         myTableview2.dataSource = self
-       
-     
+        
+        
         
     }
     @IBAction func ClickedImage(_ sender: UIButton) {
@@ -40,7 +40,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        1
+        2
     }
     
     
@@ -68,7 +68,7 @@ class ViewController: UIViewController , UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Section" + String(section)
     }
-   
+    
 }
 
 
