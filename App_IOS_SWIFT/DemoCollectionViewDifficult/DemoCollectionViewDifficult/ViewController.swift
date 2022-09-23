@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var minutesLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var myTableView: UITableView!
- 
-    
     var timer: Timer?
-    
-    
+    let array = [nameSecction(name: "Tìm Kiếm Hàng Đầu"),
+                 nameSecction(name: "Hàng Được Yêu Thích Nhất"),
+                 nameSecction(name: "Giá Rẻ"),
+                 nameSecction(name: "Hàng Còn Tồn Kho Nhiều"),
+                 nameSecction(name: "Hàng Sắp Hết Hạn"),]
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView.dataSource = self
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         myTableView.register(nib, forCellReuseIdentifier: "CollectionTableViewCell")
         getTimer()
         getCurrentTime()
+        myTableView.delegate = self
         
     }
     
@@ -60,12 +62,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        5
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell", for: indexPath) as? CollectionTableViewCell
-       
+        let item = array[indexPath.item]
+        cell?.nameSectionLb.text = item.name
         return cell!
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

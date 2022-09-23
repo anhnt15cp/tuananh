@@ -15,5 +15,7 @@ class shopHouse {
         self.name = name
     }
 }
-
+struct nameSecction {
+    var name: String?
+}
 

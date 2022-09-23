@@ -9,6 +9,8 @@ import UIKit
 
 class CollectionTableViewCell: UITableViewCell {
     @IBOutlet weak var myCollectionView: UICollectionView!
+    @IBOutlet weak var nameSectionLb: UILabel!
+    
     var shopHouse1: [shopHouse] = []
   
     
