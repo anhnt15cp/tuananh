@@ -18,13 +18,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PJx-WJ-0V7">
-                        <rect key="frame" x="0.0" y="0.0" width="291" height="136.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="120"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="291" id="BfM-Wo-Pkw"/>
+                            <constraint firstAttribute="height" constant="120" id="yEm-gH-NEa"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-Cq-fnX">
-                        <rect key="frame" x="0.0" y="136.5" width="291" height="20.5"/>
+                        <rect key="frame" x="0.0" y="120" width="291" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -41,10 +42,10 @@
                 <constraint firstItem="Voh-6E-qwR" firstAttribute="top" secondItem="Hwi-Cq-fnX" secondAttribute="bottom" constant="20" id="DSH-EY-Zje"/>
                 <constraint firstItem="PJx-WJ-0V7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GgY-g1-kdx"/>
                 <constraint firstAttribute="trailing" secondItem="Voh-6E-qwR" secondAttribute="trailing" id="OYT-y4-Xh2"/>
-                <constraint firstItem="Hwi-Cq-fnX" firstAttribute="top" secondItem="PJx-WJ-0V7" secondAttribute="bottom" id="Ogv-4S-Peu"/>
                 <constraint firstItem="Hwi-Cq-fnX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V9n-32-1RE"/>
                 <constraint firstAttribute="bottom" secondItem="Voh-6E-qwR" secondAttribute="bottom" id="VUM-gx-tUT"/>
                 <constraint firstItem="PJx-WJ-0V7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="flf-yN-bRb"/>
+                <constraint firstItem="Hwi-Cq-fnX" firstAttribute="top" secondItem="PJx-WJ-0V7" secondAttribute="bottom" id="gHK-Gf-yqP"/>
                 <constraint firstAttribute="trailing" secondItem="Hwi-Cq-fnX" secondAttribute="trailing" id="pUu-eI-Ccq"/>
             </constraints>
             <size key="customSize" width="291" height="181"/>
