@@ -15,7 +15,7 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
         var name: String = ""
         var money: String = ""
     }
-    let array = [listShopHouse(image: "1", name: "Đồ Dùng Gia Dụng", money: "100.000VND"),
+    var array = [listShopHouse(image: "1", name: "Đồ Dùng Gia Dụng", money: "100.000VND"),
                  listShopHouse(image: "2", name: "Đồ Dùng Gia Dụng", money: "200.000VND"),
                  listShopHouse(image: "3", name: "Đồ Dùng Gia Dụng", money: "300.000VND"),
                  listShopHouse(image: "4", name: "Đồ Dùng Gia Dụng", money: "400.000VND"),
@@ -50,15 +50,19 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
       130
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let edit = UIContextualAction(style: .normal, title: "Edit") { acction, view, complete in
+        let back = UIContextualAction(style: .normal, title: "Back") { acction, view, complete in
             self.dismiss(animated: true)
         }
-        edit.backgroundColor = .blue
-        let swipe = UISwipeActionsConfiguration(actions: [edit])
+        back.backgroundColor = .blue
+        let buy = UIContextualAction(style: .normal, title: "Buy") { acction, view, complete in
+            self.array.remove(at: indexPath.row)
+            self.myTableView1.reloadData()
+            
+        }
+        
+        let swipe = UISwipeActionsConfiguration(actions: [back,buy])
         return swipe
      }
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "Đồ Dùng Gia Đình"
-//    }
+
     }
   
