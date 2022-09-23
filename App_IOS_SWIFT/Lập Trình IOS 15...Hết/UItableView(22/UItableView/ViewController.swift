@@ -39,7 +39,7 @@ class ViewController: UIViewController , UITableViewDataSource , UITableViewDele
         
         let item = arrayMonAn[indexPath.row]
         
-        cell?.imageView?.image = UIImage(named: item.image)
+        cell?.imageView?.image = UIImage(contentsOfFile:item.image)
         cell?.textLabel?.text = item.name
         cell?.detailTextLabel?.text = item.country
         

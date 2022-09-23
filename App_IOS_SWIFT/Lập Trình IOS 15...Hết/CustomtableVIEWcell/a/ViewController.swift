@@ -22,11 +22,11 @@ struct MenuItem {
 class ViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
     
     
-    let array = [ MenuItem(name: "Bánh Xèo", conutry: "Việt Nam ", image: "1.jpg"),
-                  MenuItem(name: " Cá Hồi", conutry: "Mỹ ", image: "2.jpg"),
-                  MenuItem(name: "Sườn Nướng", conutry: "Việt Nam ", image: "3.jpg"),
-                  MenuItem(name: "Mẹt ", conutry: "Việt Nam ", image: "4.jpg"),
-                  MenuItem(name: "Bánh Kẹp", conutry: "Việt Nam ", image: "5.jpg"),]
+    let array = [ MenuItem(name: "Bánh Xèo", conutry: "Việt Nam ", image: "1"),
+                  MenuItem(name: " Cá Hồi", conutry: "Mỹ ", image: "2"),
+                  MenuItem(name: "Sườn Nướng", conutry: "Việt Nam ", image: "3"),
+                  MenuItem(name: "Mẹt ", conutry: "Việt Nam ", image: "4"),
+                  MenuItem(name: "Bánh Kẹp", conutry: "Việt Nam ", image: "5")]
     
                   
     var selectecd: MenuItem?

@@ -56,6 +56,14 @@ class ViewController: UIViewController {
         secondLabel.textColor = .white
         
     }
+    @IBAction func nextButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let demoVC = storyboard.instantiateViewController(withIdentifier: "DemoViewController")
+        demoVC.modalTransitionStyle = .flipHorizontal
+        demoVC.modalPresentationStyle = .fullScreen
+        present(demoVC, animated: true)
+    }
+    
     
     
 }

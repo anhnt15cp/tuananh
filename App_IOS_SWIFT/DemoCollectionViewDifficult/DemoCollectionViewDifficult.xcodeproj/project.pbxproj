@@ -18,6 +18,7 @@
 		CCA9162F28DC7B90002B1696 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9162D28DC7B90002B1696 /* CollectionViewCell.swift */; };
 		CCA9163028DC7B90002B1696 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA9162E28DC7B90002B1696 /* CollectionViewCell.xib */; };
 		CCA9163228DC7BD4002B1696 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9163128DC7BD4002B1696 /* Model.swift */; };
+		CCA9163C28DD7669002B1696 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9163B28DD7669002B1696 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CCA9162D28DC7B90002B1696 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CCA9162E28DC7B90002B1696 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		CCA9163128DC7BD4002B1696 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CCA9163B28DD7669002B1696 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				CCA9161928DC7930002B1696 /* Assets.xcassets */,
 				CCA9161B28DC7930002B1696 /* LaunchScreen.storyboard */,
 				CCA9161E28DC7930002B1696 /* Info.plist */,
+				CCA9163B28DD7669002B1696 /* DemoViewController.swift */,
 				CCA9161428DC792E002B1696 /* ViewController.swift */,
 				CCA9162428DC7AF4002B1696 /* CollectionTableViewCell.swift */,
 				CCA9162528DC7AF4002B1696 /* CollectionTableViewCell.xib */,
@@ -159,6 +162,7 @@
 				CCA9163228DC7BD4002B1696 /* Model.swift in Sources */,
 				CCA9161528DC792E002B1696 /* ViewController.swift in Sources */,
 				CCA9161128DC792E002B1696 /* AppDelegate.swift in Sources */,
+				CCA9163C28DD7669002B1696 /* DemoViewController.swift in Sources */,
 				CCA9161328DC792E002B1696 /* SceneDelegate.swift in Sources */,
 				CCA9162628DC7AF4002B1696 /* CollectionTableViewCell.swift in Sources */,
 			);

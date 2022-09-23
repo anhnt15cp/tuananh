@@ -27,11 +27,12 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwi-Cq-fnX">
                         <rect key="frame" x="0.0" y="120" width="291" height="37"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" red="0.92941176889999999" green="0.56078433989999998" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Voh-6E-qwR">
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Voh-6E-qwR">
                         <rect key="frame" x="0.0" y="177" width="291" height="4"/>
+                        <color key="progressTintColor" red="0.92941176889999999" green="0.56078433989999998" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </progressView>
                 </subviews>
             </view>
