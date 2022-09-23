@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var minutesLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var myCollectionView1: UICollectionView!
-    var listShopHouse = [shopHouse]()
+    @IBOutlet weak var myCollectionView2: UICollectionView!
     
+    var listShopHouse = [shopHouse]()
+    var lisShopHouse2 = [shopHouse1]()
     var timer: Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,8 @@ class ViewController: UIViewController {
         getData()
         let nib = UINib.init(nibName: "Demo1CollectionViewCell", bundle: nil)
         myCollectionView1.register(nib, forCellWithReuseIdentifier: "Demo1CollectionViewCell")
-        
+        let nib1 = UINib.init(nibName: "Demo2CollectionViewCell", bundle: nil)
+        myCollectionView2.register(nib1, forCellWithReuseIdentifier: "Demo2CollectionViewCell")
         
     }
     
@@ -58,6 +61,7 @@ class ViewController: UIViewController {
     func setUpCollectionView1() {
         myCollectionView1.dataSource = self
         myCollectionView1.isPagingEnabled = true
+        myCollectionView2.dataSource = self
        if let layout = myCollectionView1.collectionViewLayout as? UICollectionViewFlowLayout {
            
            layout.minimumInteritemSpacing = 0
@@ -82,15 +86,31 @@ class ViewController: UIViewController {
 }
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        listShopHouse.count
+        if collectionView.tag == 0 {
+            listShopHouse.count
+        }
+        if collectionView.tag == 1 {
+            lisShopHouse2.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Demo1CollectionViewCell", for: indexPath) as? Demo1CollectionViewCell
-        let item = listShopHouse[indexPath.row]
+        if collectionView.tag == 0 {
+            let item = listShopHouse[indexPath.row]
+            
+            cell?.imageView.image = UIImage(named: item.image)
+            cell?.moneyLb.text = item.money
+        }
+        if collectionView.tag == 1 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Demo2CollectionViewCell", for: indexPath) as? Demo2CollectionViewCell
+            let item = lisShopHouse2[indexPath.row]
+            cell?.imageView2.image = UIImage(named: item.image!)
+            cell?.money2Label.text = item.name
         
-        cell?.imageView.image = UIImage(named: item.image)
-        cell?.moneyLb.text = item.money
+        }
+       
         
         return cell!
     }

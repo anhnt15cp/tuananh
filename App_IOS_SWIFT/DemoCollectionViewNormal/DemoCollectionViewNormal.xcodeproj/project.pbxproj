@@ -16,6 +16,9 @@
 		CCA9160028DC5F30002B1696 /* Demo1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA915FE28DC5F30002B1696 /* Demo1CollectionViewCell.swift */; };
 		CCA9160128DC5F30002B1696 /* Demo1CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA915FF28DC5F30002B1696 /* Demo1CollectionViewCell.xib */; };
 		CCA9160328DC6054002B1696 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9160228DC6054002B1696 /* File.swift */; };
+		CCA9163428DD3505002B1696 /* File1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9163328DD3505002B1696 /* File1.swift */; };
+		CCA9163728DD3547002B1696 /* Demo2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9163528DD3547002B1696 /* Demo2CollectionViewCell.swift */; };
+		CCA9163828DD3547002B1696 /* Demo2CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA9163628DD3547002B1696 /* Demo2CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		CCA915FE28DC5F30002B1696 /* Demo1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo1CollectionViewCell.swift; sourceTree = "<group>"; };
 		CCA915FF28DC5F30002B1696 /* Demo1CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Demo1CollectionViewCell.xib; sourceTree = "<group>"; };
 		CCA9160228DC6054002B1696 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CCA9163328DD3505002B1696 /* File1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File1.swift; sourceTree = "<group>"; };
+		CCA9163528DD3547002B1696 /* Demo2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo2CollectionViewCell.swift; sourceTree = "<group>"; };
+		CCA9163628DD3547002B1696 /* Demo2CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Demo2CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 				CCA915F628DC506C002B1696 /* Info.plist */,
 				CCA915FE28DC5F30002B1696 /* Demo1CollectionViewCell.swift */,
 				CCA915FF28DC5F30002B1696 /* Demo1CollectionViewCell.xib */,
+				CCA9163528DD3547002B1696 /* Demo2CollectionViewCell.swift */,
+				CCA9163628DD3547002B1696 /* Demo2CollectionViewCell.xib */,
+				CCA9163328DD3505002B1696 /* File1.swift */,
 				CCA9160228DC6054002B1696 /* File.swift */,
 			);
 			path = DemoCollectionViewNormal;
@@ -136,6 +145,7 @@
 			files = (
 				CCA915F528DC506C002B1696 /* LaunchScreen.storyboard in Resources */,
 				CCA9160128DC5F30002B1696 /* Demo1CollectionViewCell.xib in Resources */,
+				CCA9163828DD3547002B1696 /* Demo2CollectionViewCell.xib in Resources */,
 				CCA915F228DC506C002B1696 /* Assets.xcassets in Resources */,
 				CCA915F028DC506B002B1696 /* Main.storyboard in Resources */,
 			);
@@ -149,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA9160328DC6054002B1696 /* File.swift in Sources */,
+				CCA9163428DD3505002B1696 /* File1.swift in Sources */,
 				CCA915ED28DC506B002B1696 /* ViewController.swift in Sources */,
+				CCA9163728DD3547002B1696 /* Demo2CollectionViewCell.swift in Sources */,
 				CCA9160028DC5F30002B1696 /* Demo1CollectionViewCell.swift in Sources */,
 				CCA915E928DC506B002B1696 /* AppDelegate.swift in Sources */,
 				CCA915EB28DC506B002B1696 /* SceneDelegate.swift in Sources */,
