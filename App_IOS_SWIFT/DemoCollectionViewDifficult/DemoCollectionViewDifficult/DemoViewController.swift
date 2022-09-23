@@ -10,11 +10,7 @@ import UIKit
 class DemoViewController: UIViewController, UITableViewDataSource , UITableViewDelegate {
    
     @IBOutlet weak var myTableView1: UITableView!
-    struct listShopHouse {
-        var image: String = ""
-        var name: String = ""
-        var money: String = ""
-    }
+
     var array = [listShopHouse(image: "1", name: "Đồ Dùng Gia Dụng", money: "100.000VND"),
                  listShopHouse(image: "2", name: "Đồ Dùng Gia Dụng", money: "200.000VND"),
                  listShopHouse(image: "3", name: "Đồ Dùng Gia Dụng", money: "300.000VND"),
@@ -23,7 +19,7 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
                  listShopHouse(image: "download-1", name: "Đồ Dùng Gia Dụng", money: "600.000VND"),
                  listShopHouse(image: "download-2", name: "Đồ Dùng Gia Dụng", money: "700.000VND"),
                  listShopHouse(image: "download-3", name: "Đồ Dùng Gia Dụng", money: "800.000VND"),]
-   
+    var selected: listShopHouse?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -63,6 +59,17 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
         let swipe = UISwipeActionsConfiguration(actions: [back,buy])
         return swipe
      }
-
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let demo2VC = storyboard.instantiateViewController(withIdentifier: "Demo2ViewController") as? Demo2ViewController
+        demo2VC!.modalTransitionStyle = .flipHorizontal
+        demo2VC!.modalPresentationStyle = .fullScreen
+        selected = array[indexPath.row]
+        demo2VC?.item = selected
+        
+        present(demo2VC!, animated: true)
+       
+        
+    }
     }
   

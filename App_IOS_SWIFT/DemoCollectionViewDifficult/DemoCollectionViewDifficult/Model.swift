@@ -19,3 +19,9 @@ struct nameSecction {
     var name: String?
 }
 
+
+struct listShopHouse {
+    var image: String = ""
+    var name: String = ""
+    var money: String = ""
+}
