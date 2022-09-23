@@ -20,12 +20,25 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
                  listShopHouse(image: "download-2", name: "Đồ Dùng Gia Dụng", money: "700.000VND"),
                  listShopHouse(image: "download-3", name: "Đồ Dùng Gia Dụng", money: "800.000VND"),]
     var selected: listShopHouse?
+    
+    let refesh = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         myTableView1.dataSource = self
         myTableView1.delegate = self
+        myTableView1.bounces = true
+        myTableView1.refreshControl = refesh
+        refesh.addTarget(self, action: #selector(refeshData), for: .valueChanged)
+        myTableView1.reloadData()
+       
     }
+    @objc func refeshData() {
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            self.refesh.endRefreshing()
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         2
     }
