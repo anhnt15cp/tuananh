@@ -14,9 +14,9 @@ class WebKitViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         myWebView.navigationDelegate = self
         let url = URL(string: "https://www.netflix.com/signup/registration")
-      let request = URLRequest(url: url!)
+        let request = URLRequest(url: url!)
         myWebView.load(request)
     }
-
-
+    
+    
 }

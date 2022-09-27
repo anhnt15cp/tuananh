@@ -8,14 +8,20 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    
+    var item = UITabBar()
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.backgroundColor = .yellow
        
        setUpViewcontrollers()
     }
+   
+    
+ let save = UITabBarItem(title: "Anh", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
+    
+    
     func setUpViewcontrollers() {
+        
         let chatVC = ChatViewController()
         let chatNC = UINavigationController(rootViewController: chatVC)
         chatVC.tabBarItem = UITabBarItem(title: "Tin Nhắn", image: UIImage(systemName: "message" ), selectedImage: UIImage(systemName: "message.fill"))

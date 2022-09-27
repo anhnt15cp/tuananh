@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="384"/>
+            <point key="canvasLocation" x="703" y="-72"/>
         </scene>
         <!--Item-->
         <scene sceneID="i2x-18-oKo">
@@ -50,7 +50,8 @@
                         <viewLayoutGuide key="safeArea" id="76W-OA-DWp"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3PE-Xo-AHl"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="GgX-pq-wjL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JJ-OZ-N0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +63,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YKq-Bd-b92" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lM1-t8-sTB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

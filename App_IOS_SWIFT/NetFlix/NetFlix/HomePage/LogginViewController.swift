@@ -16,12 +16,14 @@ class LogginViewController: UIViewController {
     @IBAction func backButton(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    @IBAction func loginButton(_ sender: UIButton) {
-    }
     @IBAction func helpButton(_ sender: UIButton) {
         let vc = HelpViewController()
-        
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .coverVertical
         present(vc, animated: true)
+    }
+    
+    @IBAction func logginButton(_ sender: UIButton) {
     }
     
 
