@@ -11,15 +11,15 @@ class DemoViewController: UIViewController, UITableViewDataSource , UITableViewD
    
     @IBOutlet weak var myTableView1: UITableView!
 
-    var array = [listShopHouse(image: "1", name: "Đồ Dùng Gia Dụng", money: "100.000VND"),
-                 listShopHouse(image: "2", name: "Đồ Dùng Gia Dụng", money: "200.000VND"),
-                 listShopHouse(image: "3", name: "Đồ Dùng Gia Dụng", money: "300.000VND"),
-                 listShopHouse(image: "4", name: "Đồ Dùng Gia Dụng", money: "400.000VND"),
-                 listShopHouse(image: "download", name: "Đồ Dùng Gia Dụng", money: "500.000VND"),
-                 listShopHouse(image: "download-1", name: "Đồ Dùng Gia Dụng", money: "600.000VND"),
-                 listShopHouse(image: "download-2", name: "Đồ Dùng Gia Dụng", money: "700.000VND"),
-                 listShopHouse(image: "download-3", name: "Đồ Dùng Gia Dụng", money: "800.000VND"),]
-    var selected: listShopHouse?
+    var array = [ListShoppe(image: "1", name: "Đồ Dùng Gia Dụng", money: "100.000VND"),
+                 ListShoppe(image: "2", name: "Đồ Dùng Gia Dụng", money: "200.000VND"),
+                 ListShoppe(image: "3", name: "Đồ Dùng Gia Dụng", money: "300.000VND"),
+                 ListShoppe(image: "4", name: "Đồ Dùng Gia Dụng", money: "400.000VND"),
+                 ListShoppe(image: "download", name: "Đồ Dùng Gia Dụng", money: "500.000VND"),
+                 ListShoppe(image: "download-1", name: "Đồ Dùng Gia Dụng", money: "600.000VND"),
+                 ListShoppe(image: "download-2", name: "Đồ Dùng Gia Dụng", money: "700.000VND"),
+                 ListShoppe(image: "download-3", name: "Đồ Dùng Gia Dụng", money: "800.000VND"),]
+    var selected: ListShoppe?
     
     let refesh = UIRefreshControl()
     override func viewDidLoad() {

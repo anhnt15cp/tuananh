@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class shopHouse {
+class Shoppe {
     var image: String?
     var name: String?
     
@@ -15,12 +15,12 @@ class shopHouse {
         self.name = name
     }
 }
-struct nameSecction {
+struct NameSection {
     var name: String?
 }
 
 
-struct listShopHouse {
+struct ListShoppe {
     var image: String = ""
     var name: String = ""
     var money: String = ""

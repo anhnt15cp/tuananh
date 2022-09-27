@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var myTableView: UITableView!
     var timer: Timer?
-    let array = [nameSecction(name: "Tìm Kiếm Hàng Đầu"),
-                 nameSecction(name: "Hàng Được Yêu Thích Nhất"),
-                 nameSecction(name: "Giá Rẻ"),
-                 nameSecction(name: "Hàng Còn Tồn Kho Nhiều"),
-                 nameSecction(name: "Hàng Sắp Hết Hạn"),]
+    let array = [NameSection(name: "Tìm Kiếm Hàng Đầu"),
+                 NameSection(name: "Hàng Được Yêu Thích Nhất"),
+                 NameSection(name: "Giá Rẻ"),
+                 NameSection(name: "Hàng Còn Tồn Kho Nhiều"),
+                 NameSection(name: "Hàng Sắp Hết Hạn"),]
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView.dataSource = self

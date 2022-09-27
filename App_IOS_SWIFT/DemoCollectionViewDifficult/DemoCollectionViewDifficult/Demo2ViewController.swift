@@ -13,14 +13,14 @@ class Demo2ViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var moneyLabel: UILabel!
     
-    var item: listShopHouse?
+    var item: ListShoppe?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         config(withModel: item!)
         
     }
-    func config(withModel: listShopHouse) {
+    func config(withModel: ListShoppe) {
         imageView.image = UIImage(named: withModel.image)
         nameLabel.text = withModel.name
         moneyLabel.text = withModel.money

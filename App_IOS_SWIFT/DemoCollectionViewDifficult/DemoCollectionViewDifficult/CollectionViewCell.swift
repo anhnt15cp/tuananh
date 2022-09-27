@@ -18,7 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     
-    func configure(withModel: shopHouse) {
+    func configure(withModel: Shoppe) {
         if let image = withModel.image {
             imageView.image = UIImage(named: image)
         }else {
