@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogginViewController" customModule="NetFlix" customModuleProvider="target">
             <connections>
+                <outlet property="myActivity" destination="75z-gY-zVC" id="ilV-6h-zda"/>
                 <outlet property="myTextField1" destination="ets-S5-jcL" id="HR1-5F-ASM"/>
                 <outlet property="myTextField2" destination="kja-gB-qO7" id="7rm-Nx-TP2"/>
                 <outlet property="view" destination="JWK-Rl-Lqu" id="9B6-U2-2c4"/>
@@ -122,9 +123,16 @@
                                         <action selector="getPassword:" destination="-1" eventType="touchUpInside" id="yE1-bi-OQT"/>
                                     </connections>
                                 </button>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="75z-gY-zVC">
+                                    <rect key="frame" x="180" y="380" width="54" height="59"/>
+                                    <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </activityIndicatorView>
                             </subviews>
                             <color key="backgroundColor" systemColor="labelColor"/>
                             <constraints>
+                                <constraint firstItem="TTL-1f-phS" firstAttribute="top" secondItem="75z-gY-zVC" secondAttribute="bottom" constant="51" id="18P-jp-lze"/>
+                                <constraint firstItem="75z-gY-zVC" firstAttribute="leading" secondItem="eKh-13-kv7" secondAttribute="leading" constant="180" id="3cS-7e-Gdx"/>
+                                <constraint firstItem="QFD-lb-Mjy" firstAttribute="leading" secondItem="75z-gY-zVC" secondAttribute="trailing" constant="126" id="4H2-US-0nS"/>
                                 <constraint firstAttribute="trailing" secondItem="W34-L9-Sew" secondAttribute="trailing" constant="15" id="52M-pI-RpT"/>
                                 <constraint firstItem="HVz-Rd-7Do" firstAttribute="top" secondItem="TTL-1f-phS" secondAttribute="bottom" constant="20" id="AHj-Hh-SYc"/>
                                 <constraint firstItem="kja-gB-qO7" firstAttribute="leading" secondItem="eKh-13-kv7" secondAttribute="leading" constant="20" id="FV6-Xg-Qe4"/>
@@ -134,6 +142,7 @@
                                 <constraint firstItem="W34-L9-Sew" firstAttribute="leading" secondItem="naO-vQ-hbc" secondAttribute="trailing" id="QNK-fj-yzL"/>
                                 <constraint firstItem="W34-L9-Sew" firstAttribute="top" secondItem="eKh-13-kv7" secondAttribute="top" id="RI3-o2-P2A"/>
                                 <constraint firstAttribute="trailing" secondItem="ets-S5-jcL" secondAttribute="trailing" constant="20" id="Sz3-T9-1Bl"/>
+                                <constraint firstItem="75z-gY-zVC" firstAttribute="top" secondItem="naO-vQ-hbc" secondAttribute="bottom" constant="335" id="VUx-pQ-SQb"/>
                                 <constraint firstAttribute="trailing" secondItem="kja-gB-qO7" secondAttribute="trailing" constant="20" id="VjL-Ng-eet"/>
                                 <constraint firstAttribute="trailing" secondItem="QFD-lb-Mjy" secondAttribute="trailing" constant="20" id="XqN-be-lZb"/>
                                 <constraint firstAttribute="bottom" secondItem="KT3-uP-bKH" secondAttribute="bottom" id="YKA-op-LJa"/>
