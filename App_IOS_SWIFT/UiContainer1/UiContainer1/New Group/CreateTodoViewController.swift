@@ -6,18 +6,11 @@
 //
 
 import UIKit
-struct Person {
-    var name: String = ""
-    var age: String = ""
-    var phone: String = ""
-    var address: String = ""
-    var gender: Int?
-}
 
 
 class CreateTodoViewController: UIViewController {
     var name: String?
-    var person1: Person?
+    var person: Person?
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var numberTextField: UITextField!
     var passData: ((Person) -> Void)?
@@ -25,30 +18,32 @@ class CreateTodoViewController: UIViewController {
     var handleBack: (() -> Void)?
     override func viewDidLoad() {
         super.viewDidLoad()
-        ageTextField.text = person1?.name
-        numberTextField.text = person1?.phone
+
         
+        if let person = person {
+            ageTextField.text = person.age
+            numberTextField.text = person.phone
+            navigationItem.title = person.name
+        }
+    
         navigationController?.navigationBar.topItem?.backButtonTitle = "" // Ẩn tên chuyển màn hình về của NavigationController
         
-        guard let name = name else {
-            return
-        }
+
         navigationItem.title = name
         
         let saveButton = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(save))
         navigationItem.rightBarButtonItem = saveButton
     }
     @objc func save() {
-        guard let name = name else {
+        guard let  age = ageTextField.text , let phone = numberTextField.text else {
             return
         }
         
-        var person = Person(name: ageTextField.text!, age: ageTextField.text!, phone: numberTextField.text!, address: "", gender: nil)
-        self.passData?(person)
+        
+       
         navigationController?.popViewController(animated: true) // quay về màn hình trước
         
-//        let newPerson = Person(name: ageTextField.text, age: ageTextField.text, phone: nil, address: nil, gender: nil)
-//        self.handleBack!()
+
     }
     
     

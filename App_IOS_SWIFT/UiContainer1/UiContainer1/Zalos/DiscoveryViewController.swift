@@ -11,9 +11,12 @@ class DiscoveryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(readNoti(_:)), name: Notification.Name("Quynh"), object: nil)
     }
-
-
+    @objc func readNoti(_ notification: Notification) {
+        if let data = notification.object as? Person {
+            print(data)
+            
+        }
+    }
 }

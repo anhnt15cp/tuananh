@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC33A68B28E48A44009C7E45 /* TermOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68928E48A44009C7E45 /* TermOfUseViewController.swift */; };
+		CC33A68C28E48A44009C7E45 /* TermOfUseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A68A28E48A44009C7E45 /* TermOfUseViewController.xib */; };
+		CC33A68F28E48CBA009C7E45 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68D28E48CBA009C7E45 /* PrivacyViewController.swift */; };
+		CC33A69028E48CBA009C7E45 /* PrivacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A68E28E48CBA009C7E45 /* PrivacyViewController.xib */; };
+		CC33A69328E48EB1009C7E45 /* GetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A69128E48EB1009C7E45 /* GetPasswordViewController.swift */; };
+		CC33A69428E48EB1009C7E45 /* GetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A69228E48EB1009C7E45 /* GetPasswordViewController.xib */; };
+		CC33A69B28E4917E009C7E45 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A69928E4917E009C7E45 /* ChattingViewController.swift */; };
+		CC33A69C28E4917E009C7E45 /* ChattingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A69A28E4917E009C7E45 /* ChattingViewController.xib */; };
+		CC33A6A328E49333009C7E45 /* GetPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6A128E49333009C7E45 /* GetPassword2ViewController.swift */; };
+		CC33A6A428E49333009C7E45 /* GetPassword2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A6A228E49333009C7E45 /* GetPassword2ViewController.xib */; };
+		CC33A6A828E5555C009C7E45 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6A628E5555C009C7E45 /* MovieViewController.swift */; };
+		CC33A6A928E5555C009C7E45 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A6A728E5555C009C7E45 /* MovieViewController.xib */; };
 		CCC0A9BA28E2A9C4004E3A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */; };
 		CCC0A9BC28E2A9C4004E3A9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */; };
 		CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BD28E2A9C4004E3A9B /* Netflix.swift */; };
@@ -25,9 +37,25 @@
 		CCC0A9E428E32799004E3A9B /* WebKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0A9E228E32799004E3A9B /* WebKitViewController.xib */; };
 		CCC0A9E828E3304D004E3A9B /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9E628E3304D004E3A9B /* HelpViewController.swift */; };
 		CCC0A9E928E3304D004E3A9B /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0A9E728E3304D004E3A9B /* HelpViewController.xib */; };
+		CCC0AA3228E43EEC004E3A9B /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0AA3028E43EEC004E3A9B /* NotificationCenterViewController.swift */; };
+		CCC0AA3328E43EEC004E3A9B /* NotificationCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */; };
+		CCC0AA3628E44E7D004E3A9B /* WebHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */; };
+		CCC0AA3728E44E7D004E3A9B /* WebHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC33A68928E48A44009C7E45 /* TermOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfUseViewController.swift; sourceTree = "<group>"; };
+		CC33A68A28E48A44009C7E45 /* TermOfUseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermOfUseViewController.xib; sourceTree = "<group>"; };
+		CC33A68D28E48CBA009C7E45 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		CC33A68E28E48CBA009C7E45 /* PrivacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyViewController.xib; sourceTree = "<group>"; };
+		CC33A69128E48EB1009C7E45 /* GetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPasswordViewController.swift; sourceTree = "<group>"; };
+		CC33A69228E48EB1009C7E45 /* GetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetPasswordViewController.xib; sourceTree = "<group>"; };
+		CC33A69928E4917E009C7E45 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		CC33A69A28E4917E009C7E45 /* ChattingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChattingViewController.xib; sourceTree = "<group>"; };
+		CC33A6A128E49333009C7E45 /* GetPassword2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPassword2ViewController.swift; sourceTree = "<group>"; };
+		CC33A6A228E49333009C7E45 /* GetPassword2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetPassword2ViewController.xib; sourceTree = "<group>"; };
+		CC33A6A628E5555C009C7E45 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		CC33A6A728E5555C009C7E45 /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		CCC0A9B628E2A9C4004E3A9B /* NetFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +76,10 @@
 		CCC0A9E228E32799004E3A9B /* WebKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebKitViewController.xib; sourceTree = "<group>"; };
 		CCC0A9E628E3304D004E3A9B /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		CCC0A9E728E3304D004E3A9B /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		CCC0AA3028E43EEC004E3A9B /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCenterViewController.xib; sourceTree = "<group>"; };
+		CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelpViewController.swift; sourceTree = "<group>"; };
+		CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebHelpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC33A6A528E55502009C7E45 /* MovieScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CC33A6A628E5555C009C7E45 /* MovieViewController.swift */,
+				CC33A6A728E5555C009C7E45 /* MovieViewController.xib */,
+			);
+			path = MovieScreen;
+			sourceTree = "<group>";
+		};
 		CCC0A9AD28E2A9C4004E3A9B = {
 			isa = PBXGroup;
 			children = (
@@ -84,20 +125,21 @@
 			children = (
 				CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */,
 				CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */,
-				CCC0A9BF28E2A9C4004E3A9B /* Main.storyboard */,
 				CCC0A9C228E2A9C5004E3A9B /* Assets.xcassets */,
 				CCC0A9C428E2A9C5004E3A9B /* LaunchScreen.storyboard */,
 				CCC0A9C728E2A9C5004E3A9B /* Info.plist */,
+				CC33A6A528E55502009C7E45 /* MovieScreen */,
 				CCC0A9E528E32A0A004E3A9B /* HelpScreen */,
-				CCC0A9CD28E2A9DC004E3A9B /* HomePage */,
+				CCC0A9CD28E2A9DC004E3A9B /* HomeCreen */,
 			);
 			path = NetFlix;
 			sourceTree = "<group>";
 		};
-		CCC0A9CD28E2A9DC004E3A9B /* HomePage */ = {
+		CCC0A9CD28E2A9DC004E3A9B /* HomeCreen */ = {
 			isa = PBXGroup;
 			children = (
 				CCC0A9BD28E2A9C4004E3A9B /* Netflix.swift */,
+				CCC0A9BF28E2A9C4004E3A9B /* Main.storyboard */,
 				CCC0A9CE28E2AA80004E3A9B /* ScrollView.swift */,
 				CCC0A9D228E2AAB4004E3A9B /* ScrollView.xib */,
 				CCC0A9D428E2B122004E3A9B /* DataScroll.swift */,
@@ -107,8 +149,10 @@
 				CCC0A9DB28E30846004E3A9B /* JohnViewController.xib */,
 				CCC0A9E128E32799004E3A9B /* WebKitViewController.swift */,
 				CCC0A9E228E32799004E3A9B /* WebKitViewController.xib */,
+				CC33A6A128E49333009C7E45 /* GetPassword2ViewController.swift */,
+				CC33A6A228E49333009C7E45 /* GetPassword2ViewController.xib */,
 			);
-			path = HomePage;
+			path = HomeCreen;
 			sourceTree = "<group>";
 		};
 		CCC0A9DE28E32723004E3A9B /* Frameworks */ = {
@@ -124,6 +168,18 @@
 			children = (
 				CCC0A9E628E3304D004E3A9B /* HelpViewController.swift */,
 				CCC0A9E728E3304D004E3A9B /* HelpViewController.xib */,
+				CCC0AA3028E43EEC004E3A9B /* NotificationCenterViewController.swift */,
+				CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */,
+				CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */,
+				CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */,
+				CC33A68928E48A44009C7E45 /* TermOfUseViewController.swift */,
+				CC33A68A28E48A44009C7E45 /* TermOfUseViewController.xib */,
+				CC33A68D28E48CBA009C7E45 /* PrivacyViewController.swift */,
+				CC33A68E28E48CBA009C7E45 /* PrivacyViewController.xib */,
+				CC33A69128E48EB1009C7E45 /* GetPasswordViewController.swift */,
+				CC33A69228E48EB1009C7E45 /* GetPasswordViewController.xib */,
+				CC33A69928E4917E009C7E45 /* ChattingViewController.swift */,
+				CC33A69A28E4917E009C7E45 /* ChattingViewController.xib */,
 			);
 			path = HelpScreen;
 			sourceTree = "<group>";
@@ -186,12 +242,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC33A69C28E4917E009C7E45 /* ChattingViewController.xib in Resources */,
+				CCC0AA3728E44E7D004E3A9B /* WebHelpViewController.xib in Resources */,
 				CCC0A9D328E2AAB4004E3A9B /* ScrollView.xib in Resources */,
 				CCC0A9DD28E30846004E3A9B /* JohnViewController.xib in Resources */,
 				CCC0A9C628E2A9C5004E3A9B /* LaunchScreen.storyboard in Resources */,
 				CCC0A9C328E2A9C5004E3A9B /* Assets.xcassets in Resources */,
+				CC33A69428E48EB1009C7E45 /* GetPasswordViewController.xib in Resources */,
+				CC33A6A928E5555C009C7E45 /* MovieViewController.xib in Resources */,
 				CCC0A9D928E2D03A004E3A9B /* LogginViewController.xib in Resources */,
 				CCC0A9C128E2A9C4004E3A9B /* Main.storyboard in Resources */,
+				CC33A69028E48CBA009C7E45 /* PrivacyViewController.xib in Resources */,
+				CC33A6A428E49333009C7E45 /* GetPassword2ViewController.xib in Resources */,
+				CC33A68C28E48A44009C7E45 /* TermOfUseViewController.xib in Resources */,
+				CCC0AA3328E43EEC004E3A9B /* NotificationCenterViewController.xib in Resources */,
 				CCC0A9E428E32799004E3A9B /* WebKitViewController.xib in Resources */,
 				CCC0A9E928E3304D004E3A9B /* HelpViewController.xib in Resources */,
 			);
@@ -205,13 +269,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCC0A9D828E2D03A004E3A9B /* LogginViewController.swift in Sources */,
+				CCC0AA3628E44E7D004E3A9B /* WebHelpViewController.swift in Sources */,
+				CC33A68F28E48CBA009C7E45 /* PrivacyViewController.swift in Sources */,
 				CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */,
 				CCC0A9E328E32799004E3A9B /* WebKitViewController.swift in Sources */,
 				CCC0A9D528E2B122004E3A9B /* DataScroll.swift in Sources */,
+				CC33A69B28E4917E009C7E45 /* ChattingViewController.swift in Sources */,
+				CC33A68B28E48A44009C7E45 /* TermOfUseViewController.swift in Sources */,
+				CC33A6A828E5555C009C7E45 /* MovieViewController.swift in Sources */,
 				CCC0A9E828E3304D004E3A9B /* HelpViewController.swift in Sources */,
 				CCC0A9CF28E2AA80004E3A9B /* ScrollView.swift in Sources */,
 				CCC0A9BA28E2A9C4004E3A9B /* AppDelegate.swift in Sources */,
 				CCC0A9DC28E30846004E3A9B /* JohnViewController.swift in Sources */,
+				CCC0AA3228E43EEC004E3A9B /* NotificationCenterViewController.swift in Sources */,
+				CC33A69328E48EB1009C7E45 /* GetPasswordViewController.swift in Sources */,
+				CC33A6A328E49333009C7E45 /* GetPassword2ViewController.swift in Sources */,
 				CCC0A9BC28E2A9C4004E3A9B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

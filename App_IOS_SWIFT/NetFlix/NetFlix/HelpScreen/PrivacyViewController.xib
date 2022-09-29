@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivacyViewController" customModule="NetFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETFLIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7PZ-BO-x6c">
+                    <rect key="frame" x="132" y="44" width="150" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="dKg-sg-5uc"/>
+                        <constraint firstAttribute="width" constant="150" id="xpV-eQ-Aum"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-Vj-TqV">
+                    <rect key="frame" x="10" y="44" width="70" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="MOZ-ev-oiv"/>
+                        <constraint firstAttribute="height" constant="50" id="VV6-vz-v7v"/>
+                    </constraints>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="chevron.backward" catalog="system"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="LtD-vy-D5f"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgY-Qs-TUB">
+                    <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajy-fo-9Y5">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1804.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvE-bJ-l0n">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="1804.5"/>
+                                    <mutableString key="text">Trang Trợ giúp về quyền riêng tư và bảo mật
+Trang này liên kết đến các bài viết trợ giúp giải đáp câu hỏi về quyền riêng tư và bảo mật. Chúng tôi luôn cố gắng giúp bạn dễ dàng tìm thấy thông tin, vì vậy có lúc bạn sẽ thấy cùng một thông tin ở nhiều bài viết. Hãy nhớ xem lại Tuyên bố về quyền riêng tư của chúng tôi.
+
+Bạn có thể tìm thấy câu trả lời cho các câu hỏi thường gặp nhất tại đây.
+
+Làm cách nào để ẩn phim hoặc chương trình khỏi lịch sử xem của tôi?
+
+Email hoặc tin nhắn lừa đảo hoặc đáng ngờ tự nhận là của Netflix
+
+Cách bảo mật tài khoản của bạn
+
+Tôi nhận được một email "yêu cầu đặt lại mật khẩu"
+
+Làm cách nào để quản lý email tôi nhận được từ Netflix?
+
+Làm cách nào để quản lý tin nhắn văn bản tôi nhận được từ Netflix?
+
+Khảo sát khách hàng của Netflix
+
+Netflix nắm giữ những thông tin cá nhân nào về bạn và cách yêu cầu bản sao
+
+Xóa, gỡ bỏ và lưu trữ thông tin
+
+Truy cập và cập nhật thông tin cá nhân
+
+Cách ngăn chặn việc sử dụng thông tin cá nhân của bạn cho một số mục đích
+
+Cách hoạt động của Hệ thống đề xuất của Netflix
+
+Quy định chung về bảo vệ dữ liệu là gì?
+
+Bài viết này có ích chứ?
+CóKhông</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="LvE-bJ-l0n" secondAttribute="bottom" id="7Vg-Rh-dCS"/>
+                                <constraint firstItem="LvE-bJ-l0n" firstAttribute="leading" secondItem="Ajy-fo-9Y5" secondAttribute="leading" id="VPA-j9-EJK"/>
+                                <constraint firstItem="LvE-bJ-l0n" firstAttribute="top" secondItem="Ajy-fo-9Y5" secondAttribute="top" id="WsI-EA-MVi"/>
+                                <constraint firstAttribute="trailing" secondItem="LvE-bJ-l0n" secondAttribute="trailing" id="XBi-jO-DrD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ajy-fo-9Y5" firstAttribute="leading" secondItem="UgY-Qs-TUB" secondAttribute="leading" id="80j-5v-kYg"/>
+                        <constraint firstAttribute="bottom" secondItem="Ajy-fo-9Y5" secondAttribute="bottom" id="KWS-cc-cKI"/>
+                        <constraint firstAttribute="trailing" secondItem="Ajy-fo-9Y5" secondAttribute="trailing" id="ady-q4-BpP"/>
+                        <constraint firstItem="Ajy-fo-9Y5" firstAttribute="top" secondItem="UgY-Qs-TUB" secondAttribute="top" id="dtz-CG-WLA"/>
+                        <constraint firstItem="Ajy-fo-9Y5" firstAttribute="width" secondItem="UgY-Qs-TUB" secondAttribute="width" id="hIi-pW-dbP"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vJq-Vj-TqV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0hh-jQ-Dxx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UgY-Qs-TUB" secondAttribute="trailing" id="0jU-Ux-piI"/>
+                <constraint firstItem="vJq-Vj-TqV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="7oC-1U-ghb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7PZ-BO-x6c" secondAttribute="trailing" constant="132" id="C7u-hH-F22"/>
+                <constraint firstItem="7PZ-BO-x6c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FCl-Cb-4WG"/>
+                <constraint firstItem="UgY-Qs-TUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lb3-xv-mpE"/>
+                <constraint firstItem="UgY-Qs-TUB" firstAttribute="top" secondItem="7PZ-BO-x6c" secondAttribute="bottom" id="RFt-WI-7kU"/>
+                <constraint firstItem="7PZ-BO-x6c" firstAttribute="leading" secondItem="vJq-Vj-TqV" secondAttribute="trailing" constant="52" id="bOj-OO-azX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UgY-Qs-TUB" secondAttribute="bottom" id="eXb-Ae-fTi"/>
+                <constraint firstItem="7PZ-BO-x6c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jSu-JJ-Ay3"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

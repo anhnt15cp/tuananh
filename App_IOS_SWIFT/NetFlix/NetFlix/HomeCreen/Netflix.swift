@@ -25,10 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupImage(config: data)
-        
-        
-        
     }
+    
     
     
     func setupUI() {
@@ -85,16 +83,15 @@ class ViewController: UIViewController {
     }
     @IBAction func acctionLoggin(_ sender: UIButton) {
         let vc = LogginViewController()
-        //        let navigationController1 = UINavigationController(rootViewController: vc)
-        vc.modalTransitionStyle = .coverVertical
         vc.modalPresentationStyle = .fullScreen
-        //        navigationController?.pushViewController(navigationController1, animated: true)
         present(vc, animated: true)
+        
         
     }
     @IBAction func acctionJohn(_ sender: UIButton) {
         let vc = JohnViewController()
         vc.modalPresentationStyle = .fullScreen
+        
         present(vc, animated: true)
     }
     

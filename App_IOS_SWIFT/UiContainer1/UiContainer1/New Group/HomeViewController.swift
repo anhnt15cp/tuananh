@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        navigationController?.navigationBar.isHidden = true
         view.backgroundColor = .white
         title = "Home"
 //        let addImage = UIImage(systemName: "plus")?.withRenderingMode(.alwaysTemplate)
@@ -38,21 +39,45 @@ class HomeViewController: UIViewController {
     
     
     @objc func add() {
-        guard let name = nameTextField.text else {
-            return
-        }
-        let createToDoVC = CreateTodoViewController()
-        createToDoVC.modalPresentationStyle = .fullScreen
-        createToDoVC.name = name
-        createToDoVC.passData = { [weak self] data in
-            guard let newSelf = self else {
+//        guard let name = nameTextField.text else {
+//            return
+//        }
+//        let createToDoVC = CreateTodoViewController()
+//        createToDoVC.modalPresentationStyle = .fullScreen
+//        createToDoVC.name = name
+//        createToDoVC.passData = { [weak self] data in
+//            guard let newSelf = self else {
+//                return
+//            }
+//
+//            newSelf.persons.append(data)
+//            newSelf.tableView.reloadData()
+//        }
+//        navigationController?.pushViewController(createToDoVC, animated: true)
+        
+        if nameTextField.text == "" {
+            let alertcontroller = UIAlertController(title: "Error", message: "Vui lòng nhập dữ liệu", preferredStyle: .actionSheet)
+            let alertacction = UIAlertAction(title: "Ok", style: .default)
+            alertcontroller.addAction(alertacction)
+            present(alertcontroller, animated: true)
+        }else {
+            guard let name = nameTextField.text else {
                 return
             }
+            let createToDoVC = CreateTodoViewController()
+            createToDoVC.modalPresentationStyle = .fullScreen
+            createToDoVC.name = name
+            createToDoVC.passData = { [weak self] data in
+                guard let newSelf = self else {
+                    return
+                }
 
-            newSelf.persons.append(data)
-            newSelf.tableView.reloadData()
+                newSelf.persons.append(data)
+                newSelf.tableView.reloadData()
+            }
+            navigationController?.pushViewController(createToDoVC, animated: true)
+        
         }
-        navigationController?.pushViewController(createToDoVC, animated: true)
         
     }
     @objc func onGoToTabBarController() {
@@ -80,15 +105,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let Edit = UIContextualAction(style: .normal, title: "EDIT") { _, _, _ in
             let edit = CreateTodoViewController()
             edit.modalPresentationStyle = .fullScreen
-            let itemCanSua = self.persons[indexPath.row]
-            edit.person1 = itemCanSua
-            edit.passData = { person in
-                self.persons[indexPath.row] = person
-//                self.tableView.reloadData()
-                tableView.reloadRows(at: [indexPath], with: .fade)
-                
-            
-            }
+//            let itemCanSua = self.persons[indexPath.row]
+            edit.person = self.persons[indexPath.row]
+          
             self.navigationController?.pushViewController(edit, animated: true)
             
         }

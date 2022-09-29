@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogginViewController" customModule="NetFlix" customModuleProvider="target">
             <connections>
+                <outlet property="myTextField1" destination="ets-S5-jcL" id="HR1-5F-ASM"/>
+                <outlet property="myTextField2" destination="kja-gB-qO7" id="7rm-Nx-TP2"/>
                 <outlet property="view" destination="JWK-Rl-Lqu" id="9B6-U2-2c4"/>
             </connections>
         </placeholder>
@@ -74,6 +76,20 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-lb-Mjy">
+                                    <rect key="frame" x="360" y="415" width="35" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Gc3-cK-eLt"/>
+                                        <constraint firstAttribute="width" constant="35" id="ehS-on-lg4"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="eye" catalog="system">
+                                        <color key="titleColor" systemColor="tintColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showPassword:" destination="-1" eventType="touchUpInside" id="R3N-W9-jEM"/>
+                                    </connections>
+                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTL-1f-phS">
                                     <rect key="frame" x="20" y="490" width="375" height="40"/>
                                     <constraints>
@@ -102,6 +118,9 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" title="Khôi phục mật khẩu"/>
+                                    <connections>
+                                        <action selector="getPassword:" destination="-1" eventType="touchUpInside" id="yE1-bi-OQT"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="labelColor"/>
@@ -116,11 +135,14 @@
                                 <constraint firstItem="W34-L9-Sew" firstAttribute="top" secondItem="eKh-13-kv7" secondAttribute="top" id="RI3-o2-P2A"/>
                                 <constraint firstAttribute="trailing" secondItem="ets-S5-jcL" secondAttribute="trailing" constant="20" id="Sz3-T9-1Bl"/>
                                 <constraint firstAttribute="trailing" secondItem="kja-gB-qO7" secondAttribute="trailing" constant="20" id="VjL-Ng-eet"/>
+                                <constraint firstAttribute="trailing" secondItem="QFD-lb-Mjy" secondAttribute="trailing" constant="20" id="XqN-be-lZb"/>
                                 <constraint firstAttribute="bottom" secondItem="KT3-uP-bKH" secondAttribute="bottom" id="YKA-op-LJa"/>
                                 <constraint firstItem="KT3-uP-bKH" firstAttribute="leading" secondItem="eKh-13-kv7" secondAttribute="leading" constant="20" id="YLi-kD-U0g"/>
                                 <constraint firstAttribute="trailing" secondItem="KT3-uP-bKH" secondAttribute="trailing" constant="20" id="bkN-ve-v30"/>
+                                <constraint firstItem="QFD-lb-Mjy" firstAttribute="top" secondItem="ets-S5-jcL" secondAttribute="bottom" constant="20" id="fbX-5d-ncR"/>
                                 <constraint firstAttribute="trailing" secondItem="TTL-1f-phS" secondAttribute="trailing" constant="20" id="fgd-8J-64K"/>
                                 <constraint firstItem="xJa-3q-W9N" firstAttribute="top" secondItem="eKh-13-kv7" secondAttribute="top" id="fu2-to-jtz"/>
+                                <constraint firstItem="QFD-lb-Mjy" firstAttribute="leading" secondItem="eKh-13-kv7" secondAttribute="leading" constant="360" id="hCE-SZ-zKy"/>
                                 <constraint firstAttribute="trailing" secondItem="W34-L9-Sew" secondAttribute="trailing" constant="15" id="hFW-A8-1el"/>
                                 <constraint firstItem="naO-vQ-hbc" firstAttribute="top" secondItem="eKh-13-kv7" secondAttribute="top" id="hRh-EB-b9h"/>
                                 <constraint firstAttribute="trailing" secondItem="HVz-Rd-7Do" secondAttribute="trailing" constant="20" id="kU9-5H-HbT"/>
@@ -157,11 +179,15 @@
     </objects>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="eye" catalog="system" width="128" height="81"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

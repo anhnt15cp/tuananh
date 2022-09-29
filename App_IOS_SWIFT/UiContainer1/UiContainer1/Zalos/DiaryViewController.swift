@@ -11,19 +11,13 @@ class DiaryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(readNoti(_:)), name: Notification.Name("Quỳnh"), object: nil)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func readNoti(_ notification: Notification) {
+        if let data = notification.object as? Person {
+            print(data)
+            
+        }
     }
-    */
 
 }

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TermOfUseViewController" customModule="NetFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffy-Jx-YjW">
+                    <rect key="frame" x="10" y="44" width="70" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="mHm-9y-c8z"/>
+                        <constraint firstAttribute="height" constant="50" id="n92-hM-fhD"/>
+                    </constraints>
+                    <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="chevron.backward" catalog="system"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="hJD-1J-rc2"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQj-Wa-pFy">
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cX3-ja-Nif">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2792.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEz-5R-cEE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="2792.5"/>
+                                    <mutableString key="text">Netflix nắm giữ những thông tin cá nhân nào về bạn và cách yêu cầu bản sao
+Đọc bài viết này để tìm hiểu xem Netflix nắm giữ những thông tin cá nhân nào về bạn và cách yêu cầu bản sao (còn được gọi là “yêu cầu truy cập thông tin cá nhân” ở một số khu vực).
+
+Tôi là chủ tài khoản. Tôi có thể xem thông tin gì về tài khoản Netflix của mình?
+Trang Tài khoản cho phép bạn truy cập các thông tin như:
+
+Thông tin tài khoản – thông tin chủ tài khoản mà bạn đã cung cấp cho Netflix, chẳng hạn như email và số điện thoại (có trong mục Tư cách thành viên và tính phí), cũng như thông tin về lựa chọn gói dịch vụ (có trong mục Chi tiết gói dịch vụ).
+
+Cài đặt thông tin liên lạc – các tùy chọn bạn đã chỉ rõ liên quan đến các thông tin bạn muốn nhận từ Netflix (có theo từng hồ sơ trong mục Hồ sơ và tính năng kiểm soát của cha mẹ).
+
+Thông tin tiếp thị – các tùy chọn bạn đã chỉ rõ liên quan đến các thông tin khuyến mại về dịch vụ của bên thứ ba bạn muốn nhận từ Netflix (có theo từng hồ sơ trong mục Hồ sơ và tính năng kiểm soát của cha mẹ).
+
+Thông tin thanh toán và thông tin lập hóa đơn – các chi tiết thanh toán bạn đã cung cấp cho Netflix và thông tin về các khoản phí dành cho gói đăng ký mà chúng tôi đã thu hoặc dự định thu từ phương thức thanh toán của bạn (có trong mục Tư cách thành viên và tính phí).
+
+Hồ sơ – chi tiết về bất kỳ hồ sơ nào bạn đã tạo trong tài khoản thành viên Netflix, bao gồm cả tùy chọn phát lại (có theo từng hồ sơ trong mục Hồ sơ và tính năng kiểm soát của cha mẹ).
+
+Lịch sử tương tác với nội dung – lịch sử Hoạt động xem và thông tin liên quan đến các lần bạn tương tác với nội dung trên Netflix, chẳng hạn như các phim và chương trình truyền hình mà bạn tìm kiếm trên dịch vụ của chúng tôi (có theo từng hồ sơ trong mục Hồ sơ và tính năng kiểm soát của cha mẹ).
+
+Thông tin địa chỉ IP – thông tin về lần cuối cùng một thiết bị cụ thể được sử dụng để phát trực tuyến từ tài khoản thành viên của bạn từ một địa chỉ IP nhất định (có tại Hoạt động phát trực tuyến gần đây qua thiết bị trong mục Cài đặt).
+
+Tôi là chủ tài khoản. Làm cách nào để lấy được bản sao dữ liệu mà Netflix nắm giữ về tôi?
+Truy cập https://www.netflix.com/account/getmyinfo và làm theo hướng dẫn.
+
+Tính từ ngày xác minh yêu cầu của bạn, có thể mất đến 30 ngày chúng tôi mới đưa ra được thông tin mà bạn yêu cầu. Nếu bạn gặp bất kỳ sự cố nào, vui lòng liên hệ privacy@netflix.com.
+
+Tôi không phải là chủ tài khoản nhưng chủ tài khoản đã chia sẻ tài khoản Netflix của họ với tôi, và tôi đã thêm địa chỉ email của mình vào hồ sơ đang sử dụng. Làm cách nào để lấy được bản sao dữ liệu mà Netflix nắm giữ về tôi?
+Như được mô tả trong Điều khoản sử dụng của Netflix, Chủ tài khoản (được định nghĩa trong Điều khoản sử dụng) của tài khoản mà bạn đang sử dụng có thể chia sẻ tài khoản với các cá nhân trong gia đình họ.
+
+Nếu đã cung cấp địa chỉ email liên kết với một hồ sơ (tìm hiểu thêm), bạn có thể liên hệ với chúng tôi theo địa chỉ privacy@netflix.com để yêu cầu nhận bản sao thông tin cá nhân của mình.
+
+Để phục vụ mục đích xác minh danh tính, vui lòng:
+
+Hãy đảm bảo rằng khi gửi yêu cầu, bạn gửi từ địa chỉ email bạn đã ghi trong hồ sơ.
+
+LƯU Ý: Nếu bạn gửi yêu cầu từ địa chỉ email khác thì dù bạn có ghi địa chỉ email này vào phần nội dung, chúng tôi cũng sẽ không chấp nhận yêu cầu.
+Cung cấp bản scan của một loại giấy tờ tùy thân do chính phủ cấp
+
+Bạn có thể che số CMND/CCCD và ảnh (nếu cần) và bất kỳ dữ liệu nhạy cảm nào khác, sao cho CMND/CCCD chỉ thể hiện thông tin cần thiết để nhận dạng: tên, ngày sinh và quốc gia (hoặc tên quốc gia viết tắt) khi gửi đi; nếu gửi từ Hoa Kỳ, vui lòng đảm bảo ID của bạn thể hiện bang cấp hoặc nơi cư trú.
+
+Xin lưu ý, chủ tài khoản sẽ được thông báo về yêu cầu của bạn.
+
+Tính từ ngày xác minh danh tính của bạn, có thể mất đến 30 ngày chúng tôi mới đưa ra được thông tin mà bạn yêu cầu.
+
+Tham khảo trang trợ giúp về Quyền riêng tư và bảo mậtđể biết thông tin về các chủ đề khác.
+
+Bài viết này có ích chứ?
+</mutableString>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="VEz-5R-cEE" secondAttribute="bottom" id="BLu-5Z-C0N"/>
+                                <constraint firstAttribute="trailing" secondItem="VEz-5R-cEE" secondAttribute="trailing" id="dWO-2k-6cb"/>
+                                <constraint firstItem="VEz-5R-cEE" firstAttribute="top" secondItem="cX3-ja-Nif" secondAttribute="top" id="hnn-BV-oQQ"/>
+                                <constraint firstItem="VEz-5R-cEE" firstAttribute="leading" secondItem="cX3-ja-Nif" secondAttribute="leading" id="rEV-kR-dhx"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cX3-ja-Nif" secondAttribute="bottom" id="0qW-Fs-ROS"/>
+                        <constraint firstItem="cX3-ja-Nif" firstAttribute="leading" secondItem="EQj-Wa-pFy" secondAttribute="leading" id="2aR-Pb-1rY"/>
+                        <constraint firstAttribute="trailing" secondItem="cX3-ja-Nif" secondAttribute="trailing" id="2ol-HD-a9A"/>
+                        <constraint firstItem="cX3-ja-Nif" firstAttribute="width" secondItem="EQj-Wa-pFy" secondAttribute="width" id="J20-Xa-hLx"/>
+                        <constraint firstItem="cX3-ja-Nif" firstAttribute="top" secondItem="EQj-Wa-pFy" secondAttribute="top" id="d6m-SF-GMO"/>
+                    </constraints>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NETFLIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1f-ke-cvd">
+                    <rect key="frame" x="100" y="44" width="304" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Xfr-rY-Rmq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EQj-Wa-pFy" secondAttribute="bottom" id="CV0-yz-QLn"/>
+                <constraint firstItem="ffy-Jx-YjW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Z4t-P9-xVZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EQj-Wa-pFy" secondAttribute="trailing" id="duQ-Jx-aKJ"/>
+                <constraint firstItem="D1f-ke-cvd" firstAttribute="leading" secondItem="ffy-Jx-YjW" secondAttribute="trailing" constant="20" id="nCa-cf-7aW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1f-ke-cvd" secondAttribute="trailing" constant="10" id="qfZ-Ye-PdL"/>
+                <constraint firstItem="D1f-ke-cvd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xmU-8g-Zyg"/>
+                <constraint firstItem="EQj-Wa-pFy" firstAttribute="top" secondItem="D1f-ke-cvd" secondAttribute="bottom" id="xyf-pl-ZAv"/>
+                <constraint firstItem="ffy-Jx-YjW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ygz-KB-VhN"/>
+                <constraint firstItem="EQj-Wa-pFy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zYO-3r-KR8"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

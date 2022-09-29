@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC33A68128E47A15009C7E45 /* DelegateFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A67F28E47A15009C7E45 /* DelegateFirstViewController.swift */; };
+		CC33A68228E47A15009C7E45 /* DelegateFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A68028E47A15009C7E45 /* DelegateFirstViewController.xib */; };
+		CC33A68528E47A28009C7E45 /* DelegateSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68328E47A28009C7E45 /* DelegateSecondViewController.swift */; };
+		CC33A68628E47A28009C7E45 /* DelegateSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A68428E47A28009C7E45 /* DelegateSecondViewController.xib */; };
+		CC33A68828E47A3E009C7E45 /* Mydelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68728E47A3E009C7E45 /* Mydelegate.swift */; };
 		CCC0A95728E1C785004E3A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A95628E1C785004E3A9B /* AppDelegate.swift */; };
 		CCC0A95928E1C785004E3A9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A95828E1C785004E3A9B /* SceneDelegate.swift */; };
 		CCC0A95B28E1C785004E3A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A95A28E1C785004E3A9B /* ViewController.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC33A67F28E47A15009C7E45 /* DelegateFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateFirstViewController.swift; sourceTree = "<group>"; };
+		CC33A68028E47A15009C7E45 /* DelegateFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateFirstViewController.xib; sourceTree = "<group>"; };
+		CC33A68328E47A28009C7E45 /* DelegateSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateSecondViewController.swift; sourceTree = "<group>"; };
+		CC33A68428E47A28009C7E45 /* DelegateSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateSecondViewController.xib; sourceTree = "<group>"; };
+		CC33A68728E47A3E009C7E45 /* Mydelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mydelegate.swift; sourceTree = "<group>"; };
 		CCC0A95328E1C785004E3A9B /* UiContainer1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UiContainer1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC0A95628E1C785004E3A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC0A95828E1C785004E3A9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +81,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC33A67C28E479B2009C7E45 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CC33A67D28E479DD009C7E45 /* New Group */,
+				CCC0A95F28E1C786004E3A9B /* Assets.xcassets */,
+				CCC0A95C28E1C785004E3A9B /* Main.storyboard */,
+				CCC0A95A28E1C785004E3A9B /* ViewController.swift */,
+				CCC0A98A28E1E889004E3A9B /* CreateTodoViewController.xib */,
+				CCC0A98928E1E889004E3A9B /* CreateTodoViewController.swift */,
+				CCC0A96B28E1CC71004E3A9B /* HomeViewController.xib */,
+				CCC0A96A28E1CC71004E3A9B /* HomeViewController.swift */,
+				CCC0A96128E1C786004E3A9B /* LaunchScreen.storyboard */,
+				CCC0A98728E1D6EB004E3A9B /* TabBarViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CC33A67D28E479DD009C7E45 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CC33A67E28E479F7009C7E45 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CC33A67F28E47A15009C7E45 /* DelegateFirstViewController.swift */,
+				CC33A68028E47A15009C7E45 /* DelegateFirstViewController.xib */,
+				CC33A68328E47A28009C7E45 /* DelegateSecondViewController.swift */,
+				CC33A68428E47A28009C7E45 /* DelegateSecondViewController.xib */,
+				CC33A68728E47A3E009C7E45 /* Mydelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		CCC0A94A28E1C784004E3A9B = {
 			isa = PBXGroup;
 			children = (
@@ -92,15 +138,8 @@
 			children = (
 				CCC0A95628E1C785004E3A9B /* AppDelegate.swift */,
 				CCC0A95828E1C785004E3A9B /* SceneDelegate.swift */,
-				CCC0A95A28E1C785004E3A9B /* ViewController.swift */,
-				CCC0A95C28E1C785004E3A9B /* Main.storyboard */,
-				CCC0A95F28E1C786004E3A9B /* Assets.xcassets */,
-				CCC0A96128E1C786004E3A9B /* LaunchScreen.storyboard */,
-				CCC0A96A28E1CC71004E3A9B /* HomeViewController.swift */,
-				CCC0A96B28E1CC71004E3A9B /* HomeViewController.xib */,
-				CCC0A98928E1E889004E3A9B /* CreateTodoViewController.swift */,
-				CCC0A98A28E1E889004E3A9B /* CreateTodoViewController.xib */,
-				CCC0A98728E1D6EB004E3A9B /* TabBarViewController.swift */,
+				CC33A67E28E479F7009C7E45 /* Delegate */,
+				CC33A67C28E479B2009C7E45 /* New Group */,
 				CCC0A96428E1C786004E3A9B /* Info.plist */,
 				CCC0A96E28E1D5EF004E3A9B /* Zalos */,
 			);
@@ -190,6 +229,8 @@
 				CCC0A96028E1C786004E3A9B /* Assets.xcassets in Resources */,
 				CCC0A98C28E1E889004E3A9B /* CreateTodoViewController.xib in Resources */,
 				CCC0A95E28E1C785004E3A9B /* Main.storyboard in Resources */,
+				CC33A68228E47A15009C7E45 /* DelegateFirstViewController.xib in Resources */,
+				CC33A68628E47A28009C7E45 /* DelegateSecondViewController.xib in Resources */,
 				CCC0A98228E1D667004E3A9B /* DiaryViewController.xib in Resources */,
 				CCC0A97228E1D600004E3A9B /* ChatViewController.xib in Resources */,
 				CCC0A96D28E1CC71004E3A9B /* HomeViewController.xib in Resources */,
@@ -205,7 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC33A68828E47A3E009C7E45 /* Mydelegate.swift in Sources */,
 				CCC0A95B28E1C785004E3A9B /* ViewController.swift in Sources */,
+				CC33A68528E47A28009C7E45 /* DelegateSecondViewController.swift in Sources */,
 				CCC0A98128E1D667004E3A9B /* DiaryViewController.swift in Sources */,
 				CCC0A98828E1D6EB004E3A9B /* TabBarViewController.swift in Sources */,
 				CCC0A98528E1D677004E3A9B /* ProfileViewController.swift in Sources */,
@@ -214,6 +257,7 @@
 				CCC0A98B28E1E889004E3A9B /* CreateTodoViewController.swift in Sources */,
 				CCC0A97D28E1D646004E3A9B /* NewFeedViewController.swift in Sources */,
 				CCC0A97928E1D627004E3A9B /* DiscoveryViewController.swift in Sources */,
+				CC33A68128E47A15009C7E45 /* DelegateFirstViewController.swift in Sources */,
 				CCC0A97128E1D600004E3A9B /* ChatViewController.swift in Sources */,
 				CCC0A96C28E1CC71004E3A9B /* HomeViewController.swift in Sources */,
 				CCC0A97528E1D618004E3A9B /* ContactViewController.swift in Sources */,

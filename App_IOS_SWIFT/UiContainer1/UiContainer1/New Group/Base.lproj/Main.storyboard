@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="-72"/>
+            <point key="canvasLocation" x="1488" y="367"/>
         </scene>
         <!--Item-->
         <scene sceneID="i2x-18-oKo">
@@ -38,24 +38,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kY9-v9-Ous" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="802"/>
+            <point key="canvasLocation" x="403" y="829"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="SNu-3p-U5q">
             <objects>
                 <viewController id="bjy-Es-Cgg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMW-kT-h8J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="76W-OA-DWp"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GgX-pq-wjL"/>
+                    <navigationItem key="navigationItem" id="nIi-a6-scq"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6JJ-OZ-N0J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="-268"/>
+            <point key="canvasLocation" x="2335" y="-295"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ert-WH-c3S">
@@ -69,8 +69,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="bGP-I6-CbI" kind="relationship" relationship="viewControllers" id="xTf-ji-8sh"/>
-                        <segue destination="bjy-Es-Cgg" kind="relationship" relationship="viewControllers" id="dGR-lZ-XmM"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SKY-uD-Qbt"/>
+                        <segue destination="bjy-Es-Cgg" kind="presentation" id="ao7-mD-crG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9c-e9-JC1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

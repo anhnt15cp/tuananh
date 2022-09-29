@@ -9,15 +9,18 @@ import UIKit
 
 class ChatViewController: UIViewController {
     
-    var button1 = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(add))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = button1
-        
+       
+        NotificationCenter.default.addObserver(self, selector: #selector(readNoti(_:)), name: Notification.Name("Quynh"), object: nil)
+    }
+    @objc func readNoti(_ notification: Notification) {
+        if let data = notification.object as? Person {
+            print(data)
+            
+        }
     }
     
-@objc func add() {
-
-}
 
 }

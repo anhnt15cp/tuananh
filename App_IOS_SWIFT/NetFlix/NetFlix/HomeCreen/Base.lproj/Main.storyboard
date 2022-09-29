@@ -62,6 +62,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XVC-BL-rbk"/>
                     <connections>
                         <outlet property="johnButton" destination="868-b5-p5f" id="mY0-HY-NVi"/>
                         <outlet property="logginButton" destination="xOS-fd-dzU" id="0rn-mB-aRA"/>
@@ -73,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131.8840579710145" y="79.6875"/>
+            <point key="canvasLocation" x="1149" y="-35"/>
         </scene>
     </scenes>
     <resources>
